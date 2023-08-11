@@ -1,4 +1,4 @@
-
+import "./Header.css";
 
 function Header() {
     return (
@@ -9,11 +9,12 @@ function Header() {
                 <a href="#">GitHub</a>
                 <a href="#">CV</a>
               </nav>
+              </div>
+            <div>
               <nav>
                 <a href="#">Projects</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-
               </nav>
             </div>
         </header>
