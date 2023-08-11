@@ -1,6 +1,6 @@
 :root {
   --backgroundColor: #101010;
-  --linksColor: #ff582e;
+  --linksColor: #07c99c;
 }
 
 header {
@@ -10,7 +10,26 @@ header {
   font-weight: 600;
   background-color: var(--backgroundColor);
 }
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  column-gap: 0.5rem;
+}
+
+nav div {
+  border: solid 2px lime;
+}
+
+nav div img {
+  width: 30%;
+}
+
 a {
   margin: 0 0.5rem;
   color: var(--linksColor);
+}
+.githubLogo,
+.cvLogo {
+  filter: invert(1);
 }
