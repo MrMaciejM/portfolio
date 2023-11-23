@@ -33,7 +33,7 @@
 .triangleH1,
 .triangleH2,
 .triangleH3 {
-  position: fixed;
+  position: absolute;
   right: 85%;
   top: 40%;
   z-index: -1;
@@ -61,7 +61,7 @@
 .triangleV1,
 .triangleV2,
 .triangleV3 {
-  position: fixed;
+  position: absolute;
   right: 85%;
   top: 40%;
   z-index: -1;
@@ -95,6 +95,7 @@ main {
 }
 .heroSectionBox {
   display: flex;
+  position: relative;
   justify-content: center;
 }
 .heroBox {
