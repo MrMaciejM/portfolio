@@ -1,0 +1,14 @@
+:root {
+  --backgroundColor: #000;
+}
+
+.projectsContainer {
+  background-color: var(--backgroundColor);
+}
+h3 {
+  font-family: "Almarai";
+  text-align: center;
+  color: var(--linksColor);
+  font-size: 2rem;
+  padding: 1rem 0;
+}

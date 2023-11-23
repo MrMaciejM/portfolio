@@ -19,13 +19,7 @@
     Brass Hex Code: #B5A642
   */
 }
-.App {
-  /*  */
-}
-body {
-  height: 100vh;
-  background: linear-gradient(150deg, #040404,#181818, #323232);
-}
+
 @font-face {
   font-family: "Almarai";
   src: url("../Assets/Fonts/Almarai/Almarai-Regular.ttf"),
@@ -38,6 +32,7 @@ header {
   padding: 0.8rem 5rem;
   border-bottom: 1px solid var(--headerBottomBorder);
   font-family: "Almarai", sans-serif;
+  /* border: solid 2px lime; */
 }
 h1,
 p {

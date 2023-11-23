@@ -5,7 +5,22 @@ function Main() {
     return (
         <main>
             <section className="heroSectionBox">
-            <svg className="triangle" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+            <svg className="triangleH1" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="22.5,4.5 40.5,40.5 4.5,40.5"/>
+            </svg>
+            <svg className="triangleH2" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="22.5,4.5 40.5,40.5 4.5,40.5"/>
+            </svg>
+            <svg className="triangleH3" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="22.5,4.5 40.5,40.5 4.5,40.5"/>
+            </svg>
+            <svg className="triangleV1" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="22.5,4.5 40.5,40.5 4.5,40.5"/>
+            </svg>
+            <svg className="triangleV2" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="22.5,4.5 40.5,40.5 4.5,40.5"/>
+            </svg>
+            <svg className="triangleV3" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
                 <polygon points="22.5,4.5 40.5,40.5 4.5,40.5"/>
             </svg>
             <div className="heroBox">
