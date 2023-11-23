@@ -1,0 +1,50 @@
+main {
+  /* background-color: #2a2a2a; */
+  height: 300px;
+  font-family: "Almarai";
+}
+.heroSectionBox {
+  display: flex;
+  justify-content: center;
+}
+.heroBox {
+  margin-left: -5rem;
+}
+.heroBox h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.heroBox p {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+.profilePicture {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.verticalLineSeparator {
+  background-color: #787878;
+  width: 1px;
+  height: 200px;
+  margin-left: -10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+  border-radius: 16px;
+}
+
+.shortAboutBox {
+  width: 20%;
+  /* border: solid 1px lime; */
+}
+.shortAboutBox p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.shortAboutBox p:first-of-type {
+  margin-top: 10.8rem;
+}
+
+span {
+  color: var(--projectLinkBackground);
+}

@@ -5,7 +5,9 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #282828;
+/* HELPER CLASSES */
+
+/* Space divider between sections/components */
+.sectionSpacing {
+  margin-bottom: 5rem;
 }

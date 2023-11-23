@@ -1,35 +1,116 @@
 :root {
-  --backgroundColor: #101010;
-  --linksColor: #07c99c;
-}
+  --backgroundColor: #1d1d1d;
+  --headerBackground: #636363;
+  --headerBottomBorder: #4e4e4e;
 
+  --linksColor: #c8c8c8;
+  --projectsLinkBackground: #d6d6d6;
+  --projectsLinkColor: #000;
+  --navLinksHover: #d6d6d6;
+  /* #f4e58f */
+  /* #cdc280 tan gold / sand */
+
+  /* 
+    Royal Blue Hex Code: #4169E1
+    Gold Hex Code: #FFD700
+    Brass Hex Code: #B5A642
+  */
+}
+.App {
+  /*  */
+}
+body {
+  height: 100vh;
+  background: linear-gradient(150deg, #0d0d0d, #323232);
+}
+@font-face {
+  font-family: "Almarai";
+  src: url("../Assets/Fonts/Almarai/Almarai-Regular.ttf"),
+    url("../Assets/Fonts/Almarai/Almarai-Light.ttf");
+}
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  font-weight: 600;
-  background-color: var(--backgroundColor);
-}
-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  column-gap: 0.5rem;
+  padding: 0.8rem 5rem;
+  border-bottom: 1px solid var(--headerBottomBorder);
+  font-family: "Almarai", sans-serif;
 }
-
-nav div {
-  border: solid 2px lime;
+h1,
+p {
+  color: #a2a2a2;
+  /* #c8c8c8 */
 }
-
-nav div img {
-  width: 30%;
+.socialsLinksNav {
+  /* background-color: #979066; */
+  border-radius: 30px;
+  width: 20%;
+  margin-left: -4.2rem;
+}
+.pageNavLinksBox {
+  margin-top: 1.1rem;
+}
+.pageNavLinksBox a {
+  transition: all 0.1s;
+  padding: 0.2rem 0.5rem;
+}
+.pageNavLinksBox a:hover {
+  box-shadow: 0px 0px 5px 1px var(--navLinksHover);
+  border-radius: 11px;
+  padding: 0.2rem 0.5rem;
+  transition: all 0s;
+}
+.navCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.4rem;
+  row-gap: 3.5rem;
+  height: 400px;
+  width: 300px;
+  /* border: solid 3px #049652; */
+  border-radius: 7px;
+  /* background-color: #872525; */
+  text-align: center;
 }
 
 a {
-  margin: 0 0.5rem;
+  font-size: 1rem;
+  margin: 0 1rem;
   color: var(--linksColor);
+  text-decoration: none;
+  transition: all 1.2s;
 }
-.githubLogo,
-.cvLogo {
+a:hover {
+  transition: all 1.2s;
+}
+#projectsLink {
+  color: var(--projectsLinkColor);
+  background-color: var(--projectsLinkBackground);
+  border-radius: 16px;
+  text-decoration: none;
+  /* padding: 0.2rem 0.5rem; */
+}
+img {
+  width: 15%;
+}
+
+.gitHubLogoImg,
+.cvLogoImg {
   filter: invert(1);
 }
+.linkedInLogoImg {
+  filter: invert(0);
+}
+/* @keyframes rotation360 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinAnimation {
+  animation: rotation360 1.2s linear 1;
+} */
