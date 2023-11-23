@@ -5,15 +5,18 @@ function Main() {
     return (
         <main>
             <section className="heroSectionBox">
+            <svg className="triangle" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="22.5,4.5 40.5,40.5 4.5,40.5"/>
+            </svg>
             <div className="heroBox">
                 <h1>Hi! I'm <span>Maciej</span>.</h1>
-                <p>An aspiring full-stack developer.</p>
-                <img className="profilePicture" src={profilePicture} alt="profile visual art" />
+                <p>An aspiring software and web developer.</p>
+                <img className="profilePicture spinning-border" src={profilePicture} alt="profile visual art" />
             </div>
             <div className="verticalLineSeparator"></div>
             <div className="shortAboutBox">
-                <p>Recent Front-End Bootcamp graduate with an IT background. I'm aspiring to become a full-stack developer and I'm working on my skills daily.</p>
-                <p>When I don't push commits to my GitHub, it means I am studying some cool technology.</p>
+                <p>Highly dedicated aspiring software & web developer with stellar attention to detail, committed to delivering <span>excellence</span> in every project.</p>
+                <p>Previously, I worked as an IT professional in the tech/app support field. When I'm not pushing code to my GitHub page, you can find me studying some cool technology, programming language, or working on a personal project.</p>
             </div>
             </section>
         </main>
