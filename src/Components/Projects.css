@@ -1,14 +1,105 @@
 :root {
-  --backgroundColor: #000;
+  --headingColor: #a2a2a2;
+  --fontColor: #a2a2a2;
+  --backgroundColor: #171717;
+
+  --decorLineColor: #555555;
+  --gold: #a99932;
+
+  --arrowColor: #a99932;
+
+  --cardsBoxBackground: #a2a2a2;
+
+  --borderColor: #828282;
+}
+
+/* CUSTOM STYLING */
+.headingDecorLineL,
+.headingDecorLineR {
+  height: 1px;
+  width: 30%;
+  margin-top: 1.5rem;
+  border: solid 1px var(--decorLineColor);
+}
+.headingDecorLineR {
+  /*  */
+}
+
+/* 
+font-size: 1.2rem; 
+*/
+.headingContainer {
+  display: flex;
+  margin-bottom: 10rem;
 }
 
 .projectsContainer {
-  background-color: var(--backgroundColor);
+  color: var(--fontColor);
+  /* background-color: var(--backgroundColor); */
+  padding-bottom: 10rem;
+  font-family: "Almarai";
 }
 h3 {
-  font-family: "Almarai";
+  color: var(--headingColor);
   text-align: center;
-  color: var(--linksColor);
-  font-size: 2rem;
+  font-size: 2.6rem;
+  font-weight: 400;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  margin: 0rem auto;
+  width: 15%;
+  /* border-bottom: 1px solid var(--gold); */
+}
+.projectsMainBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  margin: 0 1rem;
+}
+.cardsBox {
+  display: flex;
+  text-align: center;
+  padding: 0.2rem;
+  /* border: solid 1px var(--fontColor); */
+  /* background-color: var(--cardsBoxBackground); */
+  border-radius: 1px;
+}
+
+.projectImg {
+  width: 300px;
+  border-radius: 9px;
+  margin: 0.8rem 0;
+  /* border: solid 5px var(--borderColor); */
+}
+
+.leftArrow {
+  font-size: 3rem;
+  color: var(--arrowColor);
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: -50px;
+}
+
+.cardsDescDiv {
+  margin: 1rem 0;
+  margin-left: 10rem;
   padding: 1rem 0;
+  border: solid 2px var(--borderColor);
+  border-radius: 9px;
+  width: 30rem;
+}
+h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+/* Description paragraph */
+.cardsDescDiv p {
+  color: inherit;
+  font-size: 1rem;
+}
+.cardsDescDiv p:last-child {
+  margin-top: 3rem;
 }

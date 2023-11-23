@@ -25,7 +25,7 @@ function Main() {
             </svg>
             <div className="heroBox">
                 <h1>Hi! I'm <span>Maciej</span>.</h1>
-                <p>An aspiring software and web developer.</p>
+                <p></p>
                 <img className="profilePicture spinning-border" src={profilePicture} alt="profile visual art" />
             </div>
             <div className="verticalLineSeparator"></div>
