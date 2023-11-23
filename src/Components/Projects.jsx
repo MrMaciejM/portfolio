@@ -19,8 +19,8 @@ function Projects() {
                     <a href="https://github.com/MrMaciejM/card-champions">
                       <img className="projectImg" src={cardChampionsImg} alt="" />
                     </a>
-                </div>
-                <p className="leftArrow">&larr;</p>
+                </div>                
+                <p className="leftArrow">👈</p>
                 <div className="cardsDescDiv">
                   <h4>Card Champions &trade;</h4>
                   <p>A card game based on the ever-popular Rock, Paper, Scissors game rules. All assets and coding logic were drawn, designed and programmed by myself.</p>
