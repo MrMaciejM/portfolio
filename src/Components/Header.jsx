@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Header.css";
 import linkedInLogoImg from "../Assets/Images/linkedin-100.png"
 import gitHubLogoImg from "../Assets/Images/github-100.png"
-import cvLogoImg from "../Assets/Images/cv-100.png"
+import cvLogoImg from "../Assets/Images/CV-100-edited.png"
 
 function Header() {
 

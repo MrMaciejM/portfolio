@@ -19,7 +19,7 @@ function Projects() {
                     <a href="https://github.com/MrMaciejM/card-champions">
                       <img className="projectImg" src={cardChampionsImg} alt="" />
                     </a>
-                </div>                
+                </div>
                 <p className="leftArrow">👈</p>
                 <div className="cardsDescDiv">
                   <h4>Card Champions &trade;</h4>
