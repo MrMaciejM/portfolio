@@ -102,6 +102,7 @@ main {
 }
 .heroBox {
   margin-left: 4rem;
+  margin-top: 6.5rem;
 }
 .heroBox h1 {
   font-size: 4rem;
@@ -113,18 +114,13 @@ main {
   margin-left: 1rem;
 }
 .profilePicture {
+  opacity: 0;
   width: 30%;
   border-radius: 50%;
   /* border: dashed 2px var(--projectsLinkBackground); */
   margin-left: 3.5rem;
   /* filter: blur(10px); */
   /* transition: all 1s; */
-}
-
-/* Dotted animation */
-.profilePicture:hover {
-  /* transition: all 1s;
-  transform: rotate(90deg); */
 }
 
 .verticalLineSeparator {
@@ -143,7 +139,7 @@ main {
   /* border: solid 1px lime; */
 }
 .shortAboutBox p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
 }
 .shortAboutBox p:first-of-type {
