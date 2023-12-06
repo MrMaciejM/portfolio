@@ -12,17 +12,17 @@ function Header() {
             <a className="linkedInLogoLink" 
                 href="https://github.com/MrMaciejM"
                 target="#" >
-                  <img className="linkedInLogoImg" src={linkedInLogoImg} alt="linkedIn Logo" />
+                  <img className="linkedInLogoImg socialsLogosImgs" src={linkedInLogoImg} alt="linkedIn Logo" />
               </a>
             <a className="githubLogoLink" 
                 href="https://github.com/MrMaciejM"
                 target="#" >
-                  <img className="gitHubLogoImg" src={gitHubLogoImg} alt="GitHub Logo" />
+                  <img className="gitHubLogoImg socialsLogosImgs" src={gitHubLogoImg} alt="GitHub Logo" />
               </a>              
             <a className="cvLogoLink"
                 href="https://github.com/MrMaciejM"
                 target="#" >
-                  <img className="cvLogoImg" src={cvLogoImg} alt="CV Logo" />
+                  <img className="cvLogoImg socialsLogosImgs" src={cvLogoImg} alt="CV Logo" />
               </a>
             </nav>
             <nav className="pageNavLinksBox">

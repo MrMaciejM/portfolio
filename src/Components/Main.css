@@ -1,7 +1,16 @@
 /*** COLORS ***/
 :root {
-  --fontColor: #a2a2a2;
+  --fontColorHeroBox: #afafaf;
   --triangleColor: #555555;
+  --spanColorMain: #00c2c2;
+  /* teal: #00c9c9 */
+  /* Old blue: #4777d1 */
+}
+
+/*** FONT COLORS ***/
+.heroBox,
+.shortAboutBox p {
+  color: var(--fontColorHeroBox);
 }
 
 /*** ANIMATIONS ***/
@@ -13,7 +22,7 @@
     transform: translateX(0) rotate(0deg);
   }
   50% {
-    transform: translateX(22vw) rotate(180deg);
+    transform: translateX(26vw) rotate(180deg);
   }
   100% {
     transform: translateX(0) rotate(360deg);
@@ -98,7 +107,6 @@ main {
   display: flex;
   position: relative;
   justify-content: center;
-  color: var(--fontColor);
 }
 .heroBox {
   margin-left: 4rem;
@@ -147,5 +155,5 @@ main {
 }
 
 span {
-  color: var(--projectsLinkBackground);
+  color: var(--spanColorMain);
 }

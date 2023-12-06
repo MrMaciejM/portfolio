@@ -1,11 +1,14 @@
 :root {
+  /* Teal main: #6dabc8 */
   --backgroundColor: #1d1d1d;
   --headerBackground: #636363;
-  --headerBottomBorder: #4e4e4e;
+  --headerBottomBorder: transparent;
 
-  --linksColor: #c8c8c8;
-  --projectsLinkBackground: #c9b73c;
-  --projectsLinkColor: #d6d6d6;
+  --linksColor: #c1c1c1;
+  --projectsLinkColor: #000;
+  --projectsLinkBackground: #00c9c9;
+  /* #c9b73c */
+
   --navLinksHover: #d6d6d6;
   /* #f4e58f */
   /* #cdc280 tan gold / sand */
@@ -31,15 +34,12 @@ header {
   justify-content: space-between;
   text-align: center;
   padding: 0.8rem 5rem;
+  margin-top: 1rem;
   border-bottom: 1px solid var(--headerBottomBorder);
   font-family: "Almarai", sans-serif;
   /* border: solid 2px lime; */
 }
-h1,
-p {
-  color: #a2a2a2;
-  /* #c8c8c8 */
-}
+
 .socialsLinksNav {
   /* background-color: #979066; */
   border-radius: 30px;
@@ -84,14 +84,32 @@ a {
 a:hover {
   transition: all 1.2s;
 }
+
+.socialsLogosImgs {
+  border-radius: 10px;
+}
+.linkedInLogoImg:hover {
+  box-shadow: 0 0 10px 2px var(--navLinksHover);
+}
+
+.gitHubLogoImg:hover,
+.cvLogoImg:hover {
+  box-shadow: 0 0 10px 2px #303030;
+  /* NOTE: because these two have filter inverse
+  below, they need the box shadow color reversed. 
+  e.g. black = white, or white = black. 
+  */
+}
+
 #projectsLink {
   color: var(--projectsLinkColor);
-  /* background-color: var(--projectsLinkBackground); */
-  border-bottom: 2px solid var(--projectsLinkBackground);
-  border-radius: 0px;
+  background-color: var(--projectsLinkBackground);
+  border-radius: 20px;
   text-decoration: none;
   transition: all 0.5s;
-
+  /* background-color: var(--projectsLinkBackground); */
+  /* border-bottom: 2px solid var(--projectsLinkBackground); */
+  /* border: solid 1px var(--projectsLinkBackground); */
   /* padding: 0.2rem 0.5rem; */
 }
 #projectsLink:hover {
