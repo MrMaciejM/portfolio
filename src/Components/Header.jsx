@@ -26,7 +26,7 @@ function Header() {
               </a>
             </nav>
             <nav className="pageNavLinksBox">
-              <a href="https://google.co.uk">About</a>
+              <a href="https://google.co.uk">About & Reviews</a>
               <a href="https://google.co.uk">Contact</a>
               <a href="https://google.co.uk">Services</a>
               <a id="projectsLink" href="https://google.co.uk">Projects</a>

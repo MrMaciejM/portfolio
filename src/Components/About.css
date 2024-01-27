@@ -10,7 +10,7 @@
 
 .aboutSectionBox {
   font-family: "Almarai";
-  height: 800px;
+  height: 1200px;
   background: linear-gradient(270deg, #1a1a1a, #121212);
   padding-top: 10rem;
 }
@@ -29,13 +29,26 @@
 .aboutParagraphs {
   font-size: 1.2rem;
   color: var(--aboutParagraphsColor);
-  margin: 5rem 0rem auto auto;
-}
-.aboutParagraphs:nth-child(2) {
   margin-top: 2rem;
 }
-.aboutParagraphs:nth-child(3) {
-  margin-top: 2rem;
+.aboutParagraphs:nth-child(1) {
+  margin-top: 5rem;
+}
+
+/* ABOUT REVIEWS */
+.aboutReviewsDiv {
+  width: 45%;
+  margin: 5rem auto 0 auto;
+  /* border: solid 1px lime; */
+  text-align: left;
+}
+.aboutReviewsParagraphs {
+  font-size: 1.1rem;
+  font-style: italic;
+  /* letter-spacing: 1px; */
+  color: var(--aboutParagraphsColor);
+  text-align: left;
+  margin: 2rem auto;
 }
 
 /* evenSpace was simply used as a 'ruler' to calculate positioning */
