@@ -12,6 +12,7 @@ function About() {
             <p className="aboutParagraphs">Some of the popular languages and libraries I built projects in are: JavaScript, TypeScript, React, Python and Java!</p>
             <p className="aboutParagraphs">You can also see the feedback of people I worked with, as well as the certificates earned below.</p>
           </div>
+          <h3 className="reviewsHeader">What it's like to work with me?</h3>
           <div className="aboutReviewsDiv">
             <p className="aboutReviewsParagraphs">
                 "Thank you for always being the most helpful and friendly support there has been!" -  David P, Senior Manager.
