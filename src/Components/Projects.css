@@ -1,7 +1,7 @@
 :root {
   --headingColor: #a2a2a2;
   --fontColor: #a2a2a2;
-  --backgroundColor: #171717;
+  --backgroundColor: #101010;
 
   --decorLineColor: #252525;
   /* 555555 */
@@ -53,6 +53,12 @@
 }
 
 /*** CUSTOM STYLING ***/
+
+/* BACKGROUND */
+.projectsContainer {
+  /* background-color: var(--backgroundColor); */
+}
+
 .headingDecorLineL,
 .headingDecorLineR {
   height: 1px;

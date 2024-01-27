@@ -1,0 +1,50 @@
+:root {
+  --aboutBackground: #0f0f0f;
+  --aboutHeaderColor: #d5d5d5;
+  --aboutParagraphsColor: #d5d5d5;
+
+  --linksColor: #d5d5d5;
+  --projectsLinkColor: #1b1b1b;
+  --projectsLinkBackground: #5ce997;
+}
+
+.aboutSectionBox {
+  font-family: "Almarai";
+  height: 800px;
+  background: linear-gradient(270deg, #1a1a1a, #121212);
+  padding-top: 10rem;
+}
+.aboutHeader {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--aboutHeaderColor);
+}
+
+.aboutParagraphsDiv {
+  width: 45%;
+  margin: 0 auto;
+  /* border: solid 1px lime; */
+  text-align: left;
+}
+.aboutParagraphs {
+  font-size: 1.2rem;
+  color: var(--aboutParagraphsColor);
+  margin: 5rem 0rem auto auto;
+}
+.aboutParagraphs:nth-child(2) {
+  margin-top: 2rem;
+}
+.aboutParagraphs:nth-child(3) {
+  margin-top: 2rem;
+}
+
+/* evenSpace was simply used as a 'ruler' to calculate positioning */
+.evenSpacer {
+  position: absolute;
+  right: 50%;
+  height: 100px;
+  top: 50%;
+  width: 1px;
+  border: solid 3px lime;
+  margin: 0 auto;
+}

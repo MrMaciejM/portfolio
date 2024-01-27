@@ -1,12 +1,13 @@
 :root {
   /* Teal main: #6dabc8 */
-  --backgroundColor: #1d1d1d;
-  --headerBackground: #636363;
+  --backgroundColor: #1f1f1f;
+  --headerBackground: #0f0f0f;
   --headerBottomBorder: transparent;
 
-  --linksColor: #c1c1c1;
-  --projectsLinkColor: #000;
-  --projectsLinkBackground: #00c9c9;
+  --linksColor: #d5d5d5;
+  --projectsLinkColor: #1b1b1b;
+  --projectsLinkBackground: #5ce997;
+  /* 00c9c9 */
   /* #c9b73c */
 
   --navLinksHover: #d6d6d6;
@@ -32,11 +33,16 @@
 header {
   display: flex;
   justify-content: space-between;
+  top: 0;
+  width: 100%;
   text-align: center;
-  padding: 0.8rem 5rem;
-  margin-top: 1rem;
+  padding: 0.6rem 5rem;
+  margin-top: 0rem;
   border-bottom: 1px solid var(--headerBottomBorder);
   font-family: "Almarai", sans-serif;
+  position: fixed;
+  background-color: var(--headerBackground);
+  z-index: 2;
   /* border: solid 2px lime; */
 }
 
@@ -115,7 +121,7 @@ a:hover {
 #projectsLink:hover {
   transition: all 0.5s;
   border-radius: 11px;
-  box-shadow: 0px 0px 8px 4px var(--projectsLinkBackground);
+  box-shadow: 0px 0px 3px 2px var(--projectsLinkBackground);
 }
 img {
   width: 15%;
