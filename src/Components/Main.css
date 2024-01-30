@@ -3,6 +3,7 @@
   --fontColorHeroBox: #b8b8b8;
   --triangleColor: #555555;
   --spanColorMain: #3eaa6b;
+  --verticalLineSeparatorColor: #787878;
   /* 5ce997 */
   /* OG green: 5ceb98 */
   /* 00c2c2 */
@@ -15,8 +16,6 @@
 .shortAboutBox p {
   color: var(--fontColorHeroBox);
 }
-
-
 
 /* ************* */
 /*** MAIN CODE ***/
@@ -65,7 +64,7 @@ main {
 }
 
 .verticalLineSeparator {
-  background-color: #787878;
+  background-color: var(--verticalLineSeparatorColor);
   width: 1px;
   height: 400px;
   margin-left: -11rem;

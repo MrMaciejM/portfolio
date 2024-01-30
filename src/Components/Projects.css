@@ -4,6 +4,8 @@
   --backgroundColor: #101010;
 
   --decorLineColor: #252525;
+  /* OG: 252525 */
+  /* 787878 */
   /* 555555 */
   --gold: #c9b73c;
 
@@ -63,10 +65,10 @@
 
 .headingDecorLineL,
 .headingDecorLineR {
-  height: 1px;
+  height: 5px;
   width: 30%;
   margin-top: 1.5rem;
-  border: solid 1px var(--decorLineColor);
+  /* background-color: #252525; */
 }
 
 .headingContainer {

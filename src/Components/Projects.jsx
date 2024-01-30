@@ -8,20 +8,13 @@ import globeTrotterImg from "../Assets/Images/globeTrotter800x600.png"
 
 
 function Projects() {
-
     return (<section className="projectsContainer">
         <div className="headingContainer">
-          <div className="headingDecorLineL"></div>
-          <h2>Projects</h2>
-          <div className="headingDecorLineR"></div>
+          <div className="headingDecorLineL fadeGreenLight"></div>
+          <h2 className="fadeGreenLightDelayColor">Projects</h2>
+          <div className="headingDecorLineR fadeGreenLight"></div>
         </div>
         <div className="projectsMainBox">
-            <div>
-                <img className="cogImg" src={cogImg} alt="cog shape" />
-                <svg className="projectsTriangle" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                <polygon points="22.5,4.5 40.5,40.5 4.5,40.5"/>
-            </svg>
-            </div>
             <div className="cardsBox">
                 <div className="cardsImgDiv">
                     <a href="https://github.com/MrMaciejM/card-champions">

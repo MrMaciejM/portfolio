@@ -10,7 +10,7 @@ function About() {
           <div className="aboutParagraphsDiv">
             <p className="aboutParagraphs">During my software development studies, I have built a multitude of projects that adhere to rigorous <span>professional requirements</span> and industry standards. I have also acquired several certificates from various educational institutions, such as <span>EdX Trilogy/2U</span> and <span>WYWM Academy</span>.</p>
 
-            <p className="aboutParagraphs">I possess a solid understanding of the Software Development Life Cycle (SDLC) and best practices, including <span>semantic HTML, SEO, Cognitive bias in testing</span> and '<span>clean code</span>'. Additionally, I consistently strive to keep up with ever-changing technologies by learning from industry professionals, followed by hands-on project work. The majority of my projects can be found on my GitHub page.</p>
+            <p className="aboutParagraphs">I possess a solid understanding of the Software Development Life Cycle (SDLC) and best practices, including <span>semantic HTML, Cognitive bias in testing</span> and '<span>clean code</span>'. Additionally, I consistently strive to keep up with ever-changing technologies by learning from <span>industry professionals</span>, followed by hands-on project work. The majority of my projects can be found on my GitHub page.</p>
 
             <p className="aboutParagraphs">Some of the popular languages and libraries in which I have built projects include JavaScript, TypeScript, React, Python, and Java!</p>
           </div>

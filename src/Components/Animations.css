@@ -107,3 +107,46 @@
     opacity: 1;
   }
 }
+
+/* FADE GREEN LIGHT */
+.fadeGreenLight {
+  animation: fadeGreenLight 10s infinite;
+}
+@keyframes fadeGreenLight {
+  0% {
+    background-color: #252525;
+  }
+  25% {
+    background-color: #252525;
+  }
+  50% {
+    background-color: #252525;
+  }
+  75% {
+    background-color: #3eaa6b;
+  }
+  100% {
+    background-color: #252525;
+  }
+}
+/* FADE GREEN LIGHT COLOR DELAY */
+.fadeGreenLightDelayColor {
+  animation: fadeGreenLightDelayColor 10s 0;
+}
+@keyframes fadeGreenLightDelayColor {
+  0% {
+    color: #d5d5d5;
+  }
+  25% {
+    color: #d5d5d5;
+  }
+  50% {
+    color: #3eaa6b;
+  }
+  75% {
+    color: #d5d5d5;
+  }
+  100% {
+    color: #d5d5d5;
+  }
+}
