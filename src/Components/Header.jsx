@@ -1,10 +1,17 @@
-import { useState } from "react";
+import "./Animations.css"
 import "./Header.css";
 import linkedInLogoImg from "../Assets/Images/linkedin-100.png"
 import gitHubLogoImg from "../Assets/Images/github-100.png"
 import cvLogoImg from "../Assets/Images/CV-100-edited.png"
 
 function Header() {
+  
+  function scrollToAboutReviews (e) {
+    e.preventDefault();
+    let about = document.getElementById("aboutReviewsHeader");
+    about.scrollIntoView({behavior: "smooth", block: "start"}); 
+  }
+  // #aboutReviewsHeader
 
     return (
         <header className="sectionSpacing">
@@ -26,7 +33,7 @@ function Header() {
               </a>
             </nav>
             <nav className="pageNavLinksBox">
-              <a href="https://google.co.uk">About & Reviews</a>
+              <a className="linkAboutReviews" href="#" onClick={scrollToAboutReviews}>About & Reviews</a>
               <a href="https://google.co.uk">Contact</a>
               <a href="https://google.co.uk">Services</a>
               <a id="projectsLink" href="https://google.co.uk">Projects</a>

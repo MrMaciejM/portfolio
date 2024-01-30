@@ -2,7 +2,8 @@
 :root {
   --fontColorHeroBox: #b8b8b8;
   --triangleColor: #555555;
-  --spanColorMain: #5ce997;
+  --spanColorMain: #3eaa6b;
+  /* 5ce997 */
   /* OG green: 5ceb98 */
   /* 00c2c2 */
   /* teal: #00c9c9 */
@@ -15,102 +16,7 @@
   color: var(--fontColorHeroBox);
 }
 
-/*** ANIMATIONS ***/
 
-/* TRIANGLES EFFECT ANIMATIONS */
-/* Flies and rotates horizontally */
-@keyframes flyAndRotateH {
-  0% {
-    transform: translateX(0) rotate(0deg);
-  }
-  50% {
-    transform: translateX(26vw) rotate(180deg);
-  }
-  100% {
-    transform: translateX(0) rotate(360deg);
-  }
-}
-@keyframes flyAndRotateV {
-  0% {
-    transform: translateX(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(22vw) rotate(180deg);
-  }
-  100% {
-    transform: translateX(0) rotate(360deg);
-  }
-}
-/* Horizontal alignments */
-.triangleH1,
-.triangleH2,
-.triangleH3 {
-  position: absolute;
-  right: 85%;
-  top: 40%;
-  z-index: -1;
-  height: 80px;
-  width: 80px;
-  animation: flyAndRotateH 8s linear infinite;
-}
-.triangleH1,
-.triangleH2,
-.triangleH3 polygon {
-  /* fill: var(--projectsLinkBackground); */
-  fill: transparent;
-  stroke: var(--triangleColor);
-}
-.triangleH2 {
-  top: 50%;
-  animation-delay: 2s;
-}
-.triangleH3 {
-  top: 60%;
-  animation-delay: 1.2s;
-}
-
-/* Vertical alignments */
-.triangleV1,
-.triangleV2,
-.triangleV3 {
-  position: absolute;
-  right: 85%;
-  top: 40%;
-  z-index: -1;
-  height: 80px;
-  width: 80px;
-  animation: flyAndRotateV 10s linear infinite;
-}
-.triangleV1,
-.triangleV2,
-.triangleV3 {
-  fill: transparent;
-  stroke: var(--triangleColor);
-}
-.triangleV2 {
-  right: 75%;
-  animation-delay: 2s;
-}
-.triangleV3 {
-  right: 65%;
-  animation-delay: 1s;
-}
-
-/* Triangles z-index */
-.triangleV1,
-.triangleV2,
-.triangleV3,
-.triangleH1,
-.triangleH2,
-.triangleH3 {
-  z-index: 0;
-}
-
-.heroBox p,
-.profilePicture {
-  position: relative;
-  z-index: 1;
-}
 
 /* ************* */
 /*** MAIN CODE ***/
@@ -123,7 +29,7 @@ main {
   padding-top: 10rem;
   /* background: radial-gradient(circle, #2c2c2c, #1b1b1b); */
   /* background: linear-gradient(140deg, #111111, #111111, #23e293 90%, #111111); */
-  background: linear-gradient(130deg, #1a1a1a, #121212);
+  background: linear-gradient(130deg, #1a1a1a, #0a0a0a);
 
   /* background-color: #664848; */
   /* border: solid 5px red; */

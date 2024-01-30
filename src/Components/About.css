@@ -3,30 +3,46 @@
   --aboutHeaderColor: #d5d5d5;
   --aboutParagraphsColor: #d5d5d5;
 
-  --linksColor: #d5d5d5;
-  --projectsLinkColor: #1b1b1b;
-  --projectsLinkBackground: #5ce997;
+  --reviewsHeaderColor: #3eaa6b;
+
+  /* --linksColor: #d5d5d5; */
 }
 
+/* ABOUT & REVIEWS */
 .aboutSectionBox {
   font-family: "Almarai";
-  height: 1500px;
-  background: linear-gradient(270deg, #1a1a1a, #121212);
+  height: 1740px;
+  background: linear-gradient(270deg, #1a1a1a, #0a0a0a);
   padding-top: 10rem;
+  scroll-behavior: smooth;
 }
-.aboutHeader {
+/* ABOUT & REVIEWS HEADING */
+.h2 {
   font-size: 3rem;
   text-align: center;
   color: var(--aboutHeaderColor);
 }
 
-/* REVIEWS HEADER H3 */
+/* REVIEWS HEADING - H3 */
 .reviewsHeader {
   font-size: 1.8rem;
   width: 100%;
-  margin-top: 7rem;
-  margin-bottom: -3rem;
-  color: #5ce997;
+  text-align: center;
+  margin-top: 8rem;
+  color: var(--reviewsHeaderColor);
+}
+
+.singleReviewBox {
+  display: flex;
+  /* border: solid 1px lime; */
+  align-items: center;
+  user-select: none;
+}
+.personImg {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+  filter: invert(0.85);
 }
 
 .aboutParagraphsDiv {
@@ -44,15 +60,23 @@
   margin-top: 5rem;
 }
 
-/* ABOUT REVIEWS */
+/*** ABOUT REVIEWS ***/
+.aboutReviewsParagraphIntro {
+  font-size: 1.2rem;
+  color: var(--aboutParagraphsColor);
+  text-align: left;
+  margin: 4rem auto -3rem auto;
+  width: 45%;
+}
 .aboutReviewsDiv {
   width: 45%;
   margin: 5rem auto 0 auto;
   /* border: solid 1px lime; */
   text-align: left;
 }
+
 .aboutReviewsParagraphs {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-style: italic;
   /* letter-spacing: 1px; */
   color: var(--aboutParagraphsColor);

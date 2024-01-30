@@ -1,0 +1,109 @@
+/*** ANIMATIONS ***/
+
+/* TRIANGLES EFFECT ANIMATIONS */
+/* Flies and rotates horizontally */
+@keyframes flyAndRotateH {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(26vw) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+@keyframes flyAndRotateV {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(22vw) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+/* Horizontal alignments */
+.triangleH1,
+.triangleH2,
+.triangleH3 {
+  position: absolute;
+  right: 85%;
+  top: 40%;
+  z-index: -1;
+  height: 80px;
+  width: 80px;
+  animation: flyAndRotateH 8s linear infinite;
+}
+.triangleH1,
+.triangleH2,
+.triangleH3 polygon {
+  /* fill: var(--projectsLinkBackground); */
+  fill: transparent;
+  stroke: var(--triangleColor);
+}
+.triangleH2 {
+  top: 50%;
+  animation-delay: 2s;
+}
+.triangleH3 {
+  top: 60%;
+  animation-delay: 1.2s;
+}
+
+/* Vertical alignments */
+.triangleV1,
+.triangleV2,
+.triangleV3 {
+  position: absolute;
+  right: 85%;
+  top: 40%;
+  z-index: -1;
+  height: 80px;
+  width: 80px;
+  animation: flyAndRotateV 10s linear infinite;
+}
+.triangleV1,
+.triangleV2,
+.triangleV3 {
+  fill: transparent;
+  stroke: var(--triangleColor);
+}
+.triangleV2 {
+  right: 75%;
+  animation-delay: 2s;
+}
+.triangleV3 {
+  right: 65%;
+  animation-delay: 1s;
+}
+
+/* Triangles z-index */
+.triangleV1,
+.triangleV2,
+.triangleV3,
+.triangleH1,
+.triangleH2,
+.triangleH3 {
+  z-index: 0;
+}
+
+.heroBox p,
+.profilePicture {
+  position: relative;
+  z-index: 1;
+}
+
+/* FADE-IN for Vertical spacer and intro text */
+.fadeinIntro {
+  animation: fadeinIntro 5s 1;
+}
+@keyframes fadeinIntro {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}

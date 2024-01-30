@@ -1,3 +1,4 @@
+import "./Animations.css"
 import "./Projects.css"; 
 import "./Header.css"
 import cogImg from "../Assets/Images/cog.png"
@@ -11,7 +12,7 @@ function Projects() {
     return (<section className="projectsContainer">
         <div className="headingContainer">
           <div className="headingDecorLineL"></div>
-          <h3>Projects</h3>
+          <h2>Projects</h2>
           <div className="headingDecorLineR"></div>
         </div>
         <div className="projectsMainBox">

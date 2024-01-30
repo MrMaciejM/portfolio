@@ -1,12 +1,14 @@
 :root {
   /* Teal main: #6dabc8 */
   --backgroundColor: #1f1f1f;
-  --headerBackground: #0f0f0f;
+  --headerBackground: #080808;
   --headerBottomBorder: transparent;
 
   --linksColor: #d5d5d5;
   --projectsLinkColor: #1b1b1b;
-  --projectsLinkBackground: #5ce997;
+  --projectsLinkBackground: #3eaa6b;
+
+  /* 5ce997 */
   /* 00c9c9 */
   /* #c9b73c */
 
@@ -66,6 +68,13 @@ header {
   padding: 0.2rem 0.5rem;
   transition: all 0s;
 }
+
+.linkAboutReviews {
+  /* color: red; */
+  scroll-behavior: smooth;
+  scroll-margin-top: 400px;
+}
+
 .navCard {
   display: flex;
   flex-direction: column;
@@ -109,9 +118,10 @@ a:hover {
 
 #projectsLink {
   color: var(--projectsLinkColor);
+  /* background-color: red; */
   background-color: var(--projectsLinkBackground);
   border-radius: 20px;
-  text-decoration: none;
+  /* text-decoration: none; */
   transition: all 0.5s;
   /* background-color: var(--projectsLinkBackground); */
   /* border-bottom: 2px solid var(--projectsLinkBackground); */
