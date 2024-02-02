@@ -11,7 +11,7 @@
 /* ABOUT & REVIEWS */
 .aboutSectionBox {
   font-family: "Almarai";
-  height: 3400px;
+  height: 100%;
   background: linear-gradient(270deg, #1a1a1a, #0a0a0a);
   padding-top: 10rem;
   scroll-behavior: smooth;
@@ -86,32 +86,44 @@
 }
 
 /*** CERTIFICATES ***/
+.certificatesContainer {
+  padding-bottom: 5rem;
+}
 .certificatesBox {
   border-radius: 7px;
   /* background: linear-gradient(
-    30deg,
+    148deg,
     #000,
     #000,
     #000,
-    #474747,
+    #3eaa6b,
     #000,
     #000,
     #000
   ); */
+  background: linear-gradient(30deg, #272727, #272727, #141414, #3eaa6b);
   margin: 5rem auto 0 auto;
   width: 30%;
   text-align: center;
   border: solid 2px #5e5e5e;
   /* border: solid 2px #3eaa6b; */
 }
+.certificatesBox:hover {
+  /* transform: rotate3d(4, -15, 0, 25deg); */
+}
 .certificatesBoxImg {
   margin: 1rem;
   width: 60%;
   border-radius: 3px;
 }
+.certificatesBoxImg:hover {
+  cursor: pointer;
+  /* filter: contrast(0.8); */
+}
 .certificatesBoxParagraphs {
   margin: 1rem 0;
   font-size: 1.1rem;
+  font-weight: bold;
   color: var(--aboutParagraphsColor);
 }
 

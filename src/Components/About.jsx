@@ -7,6 +7,8 @@ import certInfra from "../Assets/Images/Cert-Infrastructure-L3.png"
 import certQA from "../Assets/Images/WYWM-Cert-QA_Testing_570x815.png"
 import certPython from "../Assets/Images/WYWM-Cert-Python-570x815.png"
 import certJava from "../Assets/Images/WYWM-Cert-Java-570x815.png"
+import certDevOps from "../Assets/Images/WYWM-Cert-DevOps-570x815.png"
+import certBigO from "../Assets/Images/WYWM-Cert-BigONotation-570x815.png"
 
 function About() {
 
@@ -102,6 +104,30 @@ function About() {
               <EnlargeCertImage className="certificatesBoxImg" src={certFE} altDesc={"Front-End Web Development Certificate"} />
               <p className="certificatesBoxParagraphs">Front-End Web Development Certificate</p>
             </div>            
+            <div className="certificatesBox">
+              <EnlargeCertImage className="certificatesBoxImg" src={certInfra} altDesc={"Front-End Web Development Certificate"} />
+              <p className="certificatesBoxParagraphs">Infrastructure Technician Certificate</p>
+            </div>            
+            <div className="certificatesBox">
+              <EnlargeCertImage className="certificatesBoxImg" src={certJava} altDesc={"Front-End Web Development Certificate"} />
+              <p className="certificatesBoxParagraphs">Java Fundamentals Programming Certificate</p>
+            </div>            
+            <div className="certificatesBox">
+              <EnlargeCertImage className="certificatesBoxImg" src={certPython} altDesc={"Front-End Web Development Certificate"} />
+              <p className="certificatesBoxParagraphs">Python Fundamentals Programming Certificate</p>
+            </div>            
+            <div className="certificatesBox">
+              <EnlargeCertImage className="certificatesBoxImg" src={certQA} altDesc={"Front-End Web Development Certificate"} />
+              <p className="certificatesBoxParagraphs">Software Quality Assurance Testing Fundamentals Certificate</p>
+            </div>            
+            <div className="certificatesBox">
+              <EnlargeCertImage className="certificatesBoxImg" src={certDevOps} altDesc={"Front-End Web Development Certificate"} />
+              <p className="certificatesBoxParagraphs">DevOps Fundamentals Certificate</p>
+            </div>            
+            <div className="certificatesBox">
+              <EnlargeCertImage className="certificatesBoxImg" src={certBigO} altDesc={"Front-End Web Development Certificate"} />
+              <p className="certificatesBoxParagraphs">Big O Notation Time Complexities Certificate</p>
+            </div>                      
           </div>
         </section>        
     )

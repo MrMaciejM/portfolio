@@ -159,19 +159,20 @@ img {
 } */
 
 .ShowScrollButton {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 900;
-  position: absolute;
+  position: fixed;
   height: 50px;
   width: 50px;
-  left: 48.5%;
-  top: 1070%;
+  left: 48.4%;
+  top: 92%;
   opacity: 0;
   transition: opacity 0.4s ease;
   background-color: var(--projectsLinkBackground);
   color: var(--backgroundColor);
   border: none;
   border-radius: 50%;
+  z-index: 2;
 }
 .ShowScrollButton.visible {
   opacity: 1;
