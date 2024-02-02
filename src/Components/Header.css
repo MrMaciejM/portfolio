@@ -120,7 +120,8 @@ a:hover {
   color: var(--projectsLinkColor);
   /* background-color: red; */
   background-color: var(--projectsLinkBackground);
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-radius: 3px;
   /* text-decoration: none; */
   transition: all 0.5s;
   /* background-color: var(--projectsLinkBackground); */
@@ -130,8 +131,8 @@ a:hover {
 }
 #projectsLink:hover {
   transition: all 0.5s;
-  border-radius: 11px;
-  box-shadow: 0px 0px 3px 2px var(--projectsLinkBackground);
+  /* border-radius: 11px; */
+  box-shadow: 0px 0px 8px 2px var(--projectsLinkBackground);
 }
 img {
   width: 15%;
@@ -156,3 +157,30 @@ img {
 .spinAnimation {
   animation: rotation360 1.2s linear 1;
 } */
+
+.ShowScrollButton {
+  font-size: 2.2rem;
+  font-weight: 900;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  left: 48.5%;
+  top: 1070%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background-color: var(--projectsLinkBackground);
+  color: var(--backgroundColor);
+  border: none;
+  border-radius: 50%;
+}
+.ShowScrollButton.visible {
+  opacity: 1;
+}
+.ShowScrollButton:hover {
+  cursor: pointer;
+}
+.ShowScrollButton:active {
+  cursor: pointer;
+  opacity: 1;
+  background-color: #266641;
+}

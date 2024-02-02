@@ -3,22 +3,51 @@ import "./Header.css";
 import linkedInLogoImg from "../Assets/Images/linkedin-100.png"
 import gitHubLogoImg from "../Assets/Images/github-100.png"
 import cvLogoImg from "../Assets/Images/CV-100-edited.png"
+import { useEffect, useState } from "react";
 
 function Header() {
   
-  function scrollToAboutReviews (e) {
+  function scrollToHome(e) {
     e.preventDefault();
-    let about = document.getElementById("aboutReviewsHeader");
-    about.scrollIntoView({behavior: "smooth", block: "start"}); 
+    window.scrollTo({top: 0, left:0, behavior: "smooth"});
+    console.log("clicked!")
   }
-  // #aboutReviewsHeader
 
+  function scrollToAboutReviews(e) {
+    e.preventDefault();
+    let getElement = document.getElementById("aboutReviewsHeader");
+    getElement.scrollIntoView({behavior: "smooth", block: "start"}); 
+  }
+
+  function scrollToProjects(e) {
+    e.preventDefault();
+    let getElement = document.getElementById("projectsHeading");
+    getElement.scrollIntoView({behavior: "smooth", block: "start"}); 
+  }
+
+  function ShowScrollButton() {
+    const [isVisible, setIsVisible] = useState(false);
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollY = window.scrollY; 
+        const triggerPoint = 250; // in pixels
+        setIsVisible(scrollY > triggerPoint); 
+      }; 
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    }, [])
+    return (
+      <button className={`ShowScrollButton ${isVisible ? "visible" : ""}`} onClick={scrollToHome}>&uarr;</button>
+    );
+  }
     return (
         <header className="sectionSpacing">
             <nav className="socialsLinksNav">
             <a className="linkedInLogoLink" 
                 href="https://github.com/MrMaciejM"
-                target="#" >
+                target="#">
                   <img className="linkedInLogoImg socialsLogosImgs" src={linkedInLogoImg} alt="linkedIn Logo" />
               </a>
             <a className="githubLogoLink" 
@@ -34,10 +63,11 @@ function Header() {
             </nav>
             <nav className="pageNavLinksBox">
               <a className="linkAboutReviews" href="#" onClick={scrollToAboutReviews}>About & Reviews</a>
-              <a href="https://google.co.uk">Contact</a>
-              <a href="https://google.co.uk">Services</a>
-              <a id="projectsLink" href="https://google.co.uk">Projects</a>
+              <a href="#">Contact</a>
+              <a href="#">Services</a>
+              <a id="projectsLink" href="#" onClick={scrollToProjects}>Projects</a>
             </nav>
+            <ShowScrollButton />
         </header>
     )
 }

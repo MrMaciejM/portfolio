@@ -1,6 +1,6 @@
 :root {
   --projectsHeaderColor: #d5d5d5;
-  --fontColor: #a2a2a2;
+  --projectsFontColor: #b8b8b8;
   --backgroundColor: #101010;
 
   --decorLineColor: #252525;
@@ -20,39 +20,8 @@
 
   --borderColor: #0d0d0d;
 }
+/* 
 
-/*** ANIMATIONS ***/
-@keyframes leftArrowAnimation {
-  0% {
-    color: var(--decorLineColor);
-  }
-  50% {
-    color: var(--arrowColor);
-  }
-  100% {
-    color: var(--decorLineColor);
-  }
-}
-.leftArrow {
-  animation: leftArrowAnimation 7s linear infinite;
-}
-
-@keyframes animateImg {
-  0% {
-    /* box-shadow: -1px 0px 0px 2px #c9b73c; */
-  }
-  25% {
-  }
-  50% {
-  }
-  75% {
-  }
-  100% {
-  }
-}
-.animateImg {
-  animation: animateImg 1s linear infinite;
-}
 
 /*** CUSTOM STYLING ***/
 

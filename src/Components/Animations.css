@@ -1,5 +1,8 @@
 /*** ANIMATIONS ***/
 
+/*************/
+/*** MAIN  ***/
+/*************/
 /* TRIANGLES EFFECT ANIMATIONS */
 /* Flies and rotates horizontally */
 @keyframes flyAndRotateH {
@@ -97,7 +100,7 @@
 
 /* FADE-IN for Vertical spacer and intro text */
 .fadeinIntro {
-  animation: fadeinIntro 5s 1;
+  animation: fadeinIntro 8s 1;
 }
 @keyframes fadeinIntro {
   0% {
@@ -107,6 +110,10 @@
     opacity: 1;
   }
 }
+
+/****************/
+/*** PROJECTS ***/
+/****************/
 
 /* FADE GREEN LIGHT */
 .fadeGreenLight {
