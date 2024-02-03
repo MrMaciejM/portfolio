@@ -16,20 +16,36 @@ function About() {
   function EnlargeCertImage({className, src, altDesc}) {
     const [zoomLevel, setZoomLevel] = useState(1); 
     const [isZoomed, setIsZoomed] = useState(false);
-    
-    const zoomHandler = () => {
-      setZoomLevel(isZoomed ? 1 : 0.8); 
-      setIsZoomed(!isZoomed); 
-    }   
-    const enlargeCertStyling = {
+
+    let enlargeCertStyling = {
       transform: `scale(${zoomLevel})`,
       transition: 'transform 0.2s snap',
       position: isZoomed ? 'fixed' : 'static',
-      top: isZoomed ? '5%' : 'auto',
-      left: isZoomed ? '20%' : 'auto',
+      top: isZoomed ? '-40%' : 'auto',
+      left: isZoomed ? '70%' : 'auto',
       transformOrigin: 'center center',
       zIndex: 2,
+      marginLeft: isZoomed ? '-50%' : 'auto',
+      marginRight: isZoomed ? '-50%' : 'auto',
     } 
+    
+    const zoomHandler = () => {
+      console.log(src);
+      if(src === certFE) {
+        setZoomLevel(isZoomed ? 1 : 0.6);
+        setIsZoomed(!isZoomed);  
+      } else {
+        setZoomLevel(isZoomed ? 1 : 0.4); 
+        setIsZoomed(!isZoomed); 
+      }
+    }   
+    if(src === certFE) {
+      console.log("certFE is detected")
+      enlargeCertStyling.top = isZoomed ? '5%' : 'auto';      
+    } else {
+      console.log("no bueno")
+      enlargeCertStyling.top = isZoomed ? '-35%' : 'auto';      
+    }
     return (
       <img
         className={className}
@@ -107,31 +123,31 @@ function About() {
               <p className="certificatesBoxParagraphs">Front-End Web Development Certificate</p>
             </div>            
             <div className="certificatesBox cert2">
-              <EnlargeCertImage className="certificatesBoxImg" src={certInfra} altDesc={"Front-End Web Development Certificate"} />
+              <EnlargeCertImage className="certificatesBoxImg" src={certInfra} altDesc={"Infrastructure Technician Certificate"} />
               <p className="certificatesBoxParagraphs">Infrastructure Technician Certificate</p>
             </div>            
             <div className="certificatesBox cert3">
-              <EnlargeCertImage className="certificatesBoxImg" src={certJava} altDesc={"Front-End Web Development Certificate"} />
+              <EnlargeCertImage className="certificatesBoxImg" src={certJava} altDesc={"Java Fundamentals Programming Certificate"} />
               <p className="certificatesBoxParagraphs">Java Fundamentals Programming Certificate</p>
             </div>            
             <div className="certificatesBox cert4">
-              <EnlargeCertImage className="certificatesBoxImg" src={certPython} altDesc={"Front-End Web Development Certificate"} />
+              <EnlargeCertImage className="certificatesBoxImg" src={certPython} altDesc={"Python Fundamentals Programming Certificate"} />
               <p className="certificatesBoxParagraphs">Python Fundamentals Programming Certificate</p>
             </div>
             <div className="certificatesBox cert5">
-              <EnlargeCertImage className="certificatesBoxImg" src={certQA} altDesc={"Front-End Web Development Certificate"} />
+              <EnlargeCertImage className="certificatesBoxImg" src={certQA} altDesc={"Software Quality Assurance Testing Fundamentals Certificate"} />
               <p className="certificatesBoxParagraphs">Software Quality Assurance Testing Fundamentals Certificate</p>
             </div>            
             <div className="certificatesBox cert6">
-              <EnlargeCertImage className="certificatesBoxImg" src={certDevOps} altDesc={"Front-End Web Development Certificate"} />
+              <EnlargeCertImage className="certificatesBoxImg" src={certDevOps} altDesc={"DevOps Fundamentals Certificate"} />
               <p className="certificatesBoxParagraphs">DevOps Fundamentals Certificate</p>
             </div>            
             <div className="certificatesBox cert7">
-              <EnlargeCertImage className="certificatesBoxImg" src={certBigO} altDesc={"Front-End Web Development Certificate"} />
-              <p className="certificatesBoxParagraphs">Big O Notation Time Complexities Certificate</p>
+              <EnlargeCertImage className="certificatesBoxImg" src={certBigO} altDesc={"Big O Notation Certificate"} />
+              <p className="certificatesBoxParagraphs">Big O Notation Certificate</p>
             </div>  
             <div className="certificatesBox cert8">
-              <EnlargeCertImage className="certificatesBoxImg" src={certPrinciples} altDesc={"Front-End Web Development Certificate"} />
+              <EnlargeCertImage className="certificatesBoxImg" src={certPrinciples} altDesc={"Principles of Programming"} />
               <p className="certificatesBoxParagraphs">Principles of Programming</p>
             </div>                            
           </div>

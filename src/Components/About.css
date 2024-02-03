@@ -14,6 +14,7 @@
   height: 100%;
   background: linear-gradient(270deg, #1a1a1a, #0a0a0a);
   padding-top: 10rem;
+  padding-bottom: 10rem;
   scroll-behavior: smooth;
 }
 /* ABOUT & REVIEWS HEADING */
@@ -87,11 +88,12 @@
 
 /*** CERTIFICATES ***/
 .certificatesContainer {
-  padding-bottom: 5rem;
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  padding: 5rem auto 5rem auto;
+  margin-top: 5rem;
+  row-gap: 5rem;
   grid-template-areas:
     "a a a b b b"
     "c c d d e e"
@@ -137,7 +139,7 @@
   ); */
   background: linear-gradient(30deg, #272727, #272727, #141414, #3eaa6b);
   margin: 5rem auto 0 auto;
-  width: 50%;
+  width: 60%;
   text-align: center;
   border: solid 2px #5e5e5e;
   /* border: solid 2px #3eaa6b; */
