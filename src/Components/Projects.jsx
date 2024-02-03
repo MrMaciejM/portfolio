@@ -20,6 +20,14 @@ function Projects() {
     }
     return keyframes;
   }
+    const backgroundSpiralStyle = `
+    @keyframes backgroundWave {
+      ${createKeyframes()}
+    }
+    .titleAndParaDiv {
+      animation: backgroundWave 7s infinite ease-in-out;
+    }
+  `;
 
   return (
   <section className="projectsSection" id="projectsHeading">
@@ -32,17 +40,7 @@ function Projects() {
       <div className="projectDiv">
         <img className="projectImg" src={cardChampionsImg} alt="Card Champions" />
         <div className="titleAndParaDiv">
-          <style>
-          {`
-          @keyframes backgroundWave {
-            ${createKeyframes()}
-          }
-          .titleAndParaDiv {
-            animation: backgroundWave 7s infinite ease-in-out;
-          }
-        `}
-          </style>
-        
+          <style>{backgroundSpiralStyle}</style>        
           <p className="projectTitle">Card Champions</p>
           <p className="projectParagraph">A card-battling game based on the ever-popular rock, paper, scissors formula, but with a slight twist! All assets were designed, drawn, created and coded by myself from the ground up.</p>
           <p className="projectParagraph">Tech Stack | React, CSS, HTML, Krita, Sony Vegas. </p>
