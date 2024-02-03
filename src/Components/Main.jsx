@@ -33,7 +33,7 @@ function Main() {
             <div className="verticalLineSeparator fadeinIntro"></div>
             <div className="shortAboutBox fadeinIntro">
                 {/* <img className="hexagonGrid" src={hexagonGrid} alt="hexagon grid gray" /> */}
-                <p>Highly dedicated web & software developer with stellar attention to detail and commitment to delivering <span>excellence</span> in every project.</p>
+                <p>Highly dedicated web & software developer with stellar attention to detail and commitment to deliver in <span>every</span> project.</p>
                 <p>Previously, I worked as an IT professional in the tech/application support field. When I'm not pushing code to my GitHub page, you can find me studying new technologies, tools, programming language, or working on a personal project.</p>
             </div>
             </section>

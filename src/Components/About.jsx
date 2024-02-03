@@ -9,6 +9,7 @@ import certPython from "../Assets/Images/WYWM-Cert-Python-570x815.png"
 import certJava from "../Assets/Images/WYWM-Cert-Java-570x815.png"
 import certDevOps from "../Assets/Images/WYWM-Cert-DevOps-570x815.png"
 import certBigO from "../Assets/Images/WYWM-Cert-BigONotation-570x815.png"
+import certPrinciples from "../Assets/Images/WYWM-Cert-PrinciplesOfProgramming-570x815.png"
 
 function About() {
 
@@ -96,38 +97,43 @@ function About() {
           </div>
           {/* CERTIFICATES */}
           {/* TO IMPLEMENT: 
-            -  zoom in on certificates 
+            - zoom in on certificates 
+            - fix zoom in dimensions
           */}
           <h3 className="certificatesHeading">My Certificates</h3>
           <div className="certificatesContainer">
-            <div className="certificatesBox">
+            <div className="certificatesBox cert1">
               <EnlargeCertImage className="certificatesBoxImg" src={certFE} altDesc={"Front-End Web Development Certificate"} />
               <p className="certificatesBoxParagraphs">Front-End Web Development Certificate</p>
             </div>            
-            <div className="certificatesBox">
+            <div className="certificatesBox cert2">
               <EnlargeCertImage className="certificatesBoxImg" src={certInfra} altDesc={"Front-End Web Development Certificate"} />
               <p className="certificatesBoxParagraphs">Infrastructure Technician Certificate</p>
             </div>            
-            <div className="certificatesBox">
+            <div className="certificatesBox cert3">
               <EnlargeCertImage className="certificatesBoxImg" src={certJava} altDesc={"Front-End Web Development Certificate"} />
               <p className="certificatesBoxParagraphs">Java Fundamentals Programming Certificate</p>
             </div>            
-            <div className="certificatesBox">
+            <div className="certificatesBox cert4">
               <EnlargeCertImage className="certificatesBoxImg" src={certPython} altDesc={"Front-End Web Development Certificate"} />
               <p className="certificatesBoxParagraphs">Python Fundamentals Programming Certificate</p>
-            </div>            
-            <div className="certificatesBox">
+            </div>
+            <div className="certificatesBox cert5">
               <EnlargeCertImage className="certificatesBoxImg" src={certQA} altDesc={"Front-End Web Development Certificate"} />
               <p className="certificatesBoxParagraphs">Software Quality Assurance Testing Fundamentals Certificate</p>
             </div>            
-            <div className="certificatesBox">
+            <div className="certificatesBox cert6">
               <EnlargeCertImage className="certificatesBoxImg" src={certDevOps} altDesc={"Front-End Web Development Certificate"} />
               <p className="certificatesBoxParagraphs">DevOps Fundamentals Certificate</p>
             </div>            
-            <div className="certificatesBox">
+            <div className="certificatesBox cert7">
               <EnlargeCertImage className="certificatesBoxImg" src={certBigO} altDesc={"Front-End Web Development Certificate"} />
               <p className="certificatesBoxParagraphs">Big O Notation Time Complexities Certificate</p>
-            </div>                      
+            </div>  
+            <div className="certificatesBox cert8">
+              <EnlargeCertImage className="certificatesBoxImg" src={certPrinciples} altDesc={"Front-End Web Development Certificate"} />
+              <p className="certificatesBoxParagraphs">Principles of Programming</p>
+            </div>                            
           </div>
         </section>        
     )

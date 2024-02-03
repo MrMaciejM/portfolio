@@ -88,7 +88,41 @@
 /*** CERTIFICATES ***/
 .certificatesContainer {
   padding-bottom: 5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  grid-template-areas:
+    "a a a b b b"
+    "c c d d e e"
+    "f f g g h h";
 }
+/* GRID AND CERT LAYOUT */
+.cert1 {
+  grid-area: a;
+}
+.cert2 {
+  grid-area: b;
+}
+.cert3 {
+  grid-area: c;
+}
+.cert4 {
+  grid-area: d;
+}
+.cert5 {
+  grid-area: e;
+}
+.cert6 {
+  grid-area: f;
+}
+.cert7 {
+  grid-area: g;
+}
+.cert8 {
+  grid-area: h;
+}
+
 .certificatesBox {
   border-radius: 7px;
   /* background: linear-gradient(
@@ -103,7 +137,7 @@
   ); */
   background: linear-gradient(30deg, #272727, #272727, #141414, #3eaa6b);
   margin: 5rem auto 0 auto;
-  width: 30%;
+  width: 50%;
   text-align: center;
   border: solid 2px #5e5e5e;
   /* border: solid 2px #3eaa6b; */
