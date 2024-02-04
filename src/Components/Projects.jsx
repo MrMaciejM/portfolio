@@ -37,6 +37,7 @@ function Projects() {
       <div className="headingDecorLineR fadeGreenLight"></div>
     </div>
     <div className="projectsContainer">
+      {/*** Project 1 ***/}
       <div className="projectDiv">
         <img className="projectImg" src={cardChampionsImg} alt="Card Champions" />
         <div className="titleAndParaDiv">
@@ -50,6 +51,21 @@ function Projects() {
           </div>
         </div>
       </div>
+      {/*** Project 2 ***/}
+      <div className="projectDiv">
+        <img className="projectImg" src={cardChampionsImg} alt="Card Champions" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">Card Champions</p>
+          <p className="projectParagraph">A card-battling game based on the ever-popular rock, paper, scissors formula, but with a slight twist! All assets were designed, drawn, created and coded by myself from the ground up.</p>
+          <p className="projectParagraph">Tech Stack | React, CSS, HTML, Krita, Sony Vegas. </p>
+          <div className="projectLinksDiv">
+            <a href="">GitHub</a>
+            <a href="">Live Site</a>
+          </div>
+        </div>
+      </div>
+      {/* Project 3 */}
     </div>    
   </section>
   )
