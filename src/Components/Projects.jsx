@@ -1,9 +1,16 @@
 import "./Animations.css"
 import "./Projects.css"; 
 import "./Header.css"
-import placeholderImg from "../Assets/Images/placeholder-500x-300y.png"
+import myPixieImg from "../Assets/Images/myPixie-800x600-inDev.png"
 import cardChampionsImg from "../Assets/Images/cardChampions800x600.png"
 import globeTrotterImg from "../Assets/Images/globeTrotter800x600.png"
+import weatherDashboardImg from "../Assets/Images/weatherApp-800x600.png"
+import expenseTrackerImg from "../Assets/Images/expenses-tracker-800x600.png"
+import myEmptorImg from "../Assets/Images/myEmptor-800x600.png"
+import restaurantSiteImg from "../Assets/Images/restaurantSite-800x600.png"
+import daySchedulerImg from "../Assets/Images/dayScheduler-800x600.png"
+import teamGeneratorImg from "../Assets/Images/teamGenerator-800x600.png"
+import productLandingPageImg from "../Assets/Images/landingPage-800x600.png"
 import { useEffect, useState } from "react";
 
 
@@ -39,15 +46,15 @@ function Projects() {
     <div className="projectsContainer">
       {/*** Project 1 ***/}
       <div className="projectDiv">
-        <img className="projectImg" src={cardChampionsImg} alt="Card Champions" />
+        <img className="projectImg" src={myPixieImg} alt="MyPixie social media website" />
         <div className="titleAndParaDiv">
           <style>{backgroundSpiralStyle}</style>        
-          <p className="projectTitle">Card Champions</p>
-          <p className="projectParagraph">A card-battling game based on the ever-popular rock, paper, scissors formula, but with a slight twist! All assets were designed, drawn, created and coded by myself from the ground up.</p>
-          <p className="projectParagraph">Tech Stack | React, CSS, HTML, Krita, Sony Vegas. </p>
+          <p className="projectTitle">MyPixie</p>
+          <p className="projectParagraph">A social media website with an 'AI/Machine Learning powered pixie' that allows you to make posts, comments and view the latest news from around the world. The aim of this project is to develop and push my skills further, with the focus on authetnication, hosting/Cloud, back-end technologies, learning basics of ML/AI and implement new databases using PostgreSQL / MongoDB / SQL.</p>
+          <p className="projectParagraph">Tech Stack (TBC) | AI/ML, TypeScript, React, Node, SQL/PostegreSQL. </p>
           <div className="projectLinksDiv">
-            <a href="">GitHub</a>
-            <a href="">Live Site</a>
+            {/* <a href="" style={{display: "none"}}>GitHub</a>
+            <a href="" style={{display: "none"}}>Live Site</a> */}
           </div>
         </div>
       </div>
@@ -60,12 +67,124 @@ function Projects() {
           <p className="projectParagraph">A card-battling game based on the ever-popular rock, paper, scissors formula, but with a slight twist! All assets were designed, drawn, created and coded by myself from the ground up.</p>
           <p className="projectParagraph">Tech Stack | React, CSS, HTML, Krita, Sony Vegas. </p>
           <div className="projectLinksDiv">
-            <a href="">GitHub</a>
-            <a href="">Live Site</a>
+            <a href="https://github.com/MrMaciejM/card-champions" target="#blank">GitHub</a>
+            <a href="https://mrmaciejm.github.io/card-champions/" target="#blank" >Live Site</a>
           </div>
         </div>
       </div>
       {/* Project 3 */}
+      <div className="projectDiv">
+        <img className="projectImg" src={globeTrotterImg} alt="GlobeTrotter travel app" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">GlobeTrotter</p>
+          <p className="projectParagraph">A React team project built with various tech and presented on the final day of the edX Front-End bootcamp.</p>
+          <p className="projectParagraph">Tech Stack | React, CSS, JavaScript, Kanban, API, ChakraUI. </p>
+          <div className="projectLinksDiv">
+            <a href="https://github.com/MrMaciejM/GlobeTrotter" target="#blank">GitHub</a>
+            <a href="https://globetrotterreact.netlify.app/" target="#blank" >Live Site</a>
+          </div>
+        </div>
+      </div>
+      {/* Project 4 */}
+      <div className="projectDiv">
+        <img className="projectImg" src={weatherDashboardImg} alt="Weather Dashboard App" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">Weather Dashboard</p>
+          <p className="projectParagraph">Weather dashboard utilising several stacks, however, the main goal was to learn how to use the APIs and work with localStorage.</p>
+          <p className="projectParagraph">Tech Stack | HTML, CSS, JavaScript, API, Moment.js, Bootstrap.</p>
+          <div className="projectLinksDiv">
+            <a href="https://github.com/MrMaciejM/weather-dashboard" target="#blank">GitHub</a>
+            <a href="https://mrmaciejm.github.io/weather-dashboard/" target="#blank" >Live Site</a>
+          </div>
+        </div>
+      </div>
+      {/* Project 5 */}
+      <div className="projectDiv">
+        <img className="projectImg" src={expenseTrackerImg} alt="Expenses Tracker App" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">Expense Tracker</p>
+          <p className="projectParagraph">Expenses tracker app built with React to help keep track of expenses, as well as date of expenses and sums up the total of expenses.</p>
+          <p className="projectParagraph">Tech Stack | React, HTML, CSS, JavaScript.</p>
+          <div className="projectLinksDiv">
+            <a href="https://github.com/MrMaciejM/expense-tracker" target="#blank">GitHub</a>
+            <a href="https://mrmaciejm.github.io/expense-tracker/" target="#blank" >Live Site</a>
+          </div>
+        </div>
+      </div>
+      {/* Project 6 */}
+      <div className="projectDiv">
+        <img className="projectImg" src={myEmptorImg} alt="myEmptor App" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">myEmptor</p>
+          <p className="projectParagraph">A client and finance tracking dashboard built in TypeScript with several functionality such as sorting by different options, taking backups and restoring backups.</p>
+          <p className="projectParagraph">Tech Stack | TypeScript, HTML, CSS, JavaScript.</p>
+          <div className="projectLinksDiv">
+            <a href="https://github.com/MrMaciejM/myemptor-app" target="#blank">GitHub</a>
+            <a href="https://mrmaciejm.github.io/myemptor-app/" target="#blank" >Live Site</a>
+          </div>
+        </div>
+      </div>
+      {/* Project 7 */}
+      <div className="projectDiv">
+        <img className="projectImg" src={restaurantSiteImg} alt="Indian restaurant website" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">Restaurant Site</p>
+          <p className="projectParagraph">A restaurant site built with mobile-first approach in mind and ease of use - particularly when it comes to navigation and convenience.</p>
+          <p className="projectParagraph">Tech Stack | HTML, CSS, JavaScript, Bootstrap.</p>
+          <div className="projectLinksDiv">
+            <a href="https://github.com/MrMaciejM/restaurant-site" target="#blank">GitHub</a>
+            <a href="https://mrmaciejm.github.io/restaurant-site/" target="#blank" >Live Site</a>
+          </div>
+        </div>
+      </div>
+      {/* Project 8 */}
+      <div className="projectDiv">
+        <img className="projectImg" src={daySchedulerImg} alt="Work Day Scheduler" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">Work Day Scheduler</p>
+          <p className="projectParagraph">Daily scheduler app built to help keep track of tasks and show color-coded current, past and future time.</p>
+          <p className="projectParagraph">Tech Stack | HTML, CSS, JavaScript, jQuery, Moment.js.</p>
+          <div className="projectLinksDiv">
+            <a href="https://github.com/MrMaciejM/daily-planner-app" target="#blank">GitHub</a>
+            <a href="https://mrmaciejm.github.io/daily-planner-app/" target="#blank" >Live Site</a>
+          </div>
+        </div>
+      </div>
+      {/* Project 9 */}
+      <div className="projectDiv">
+        <img className="projectImg" src={teamGeneratorImg} alt="Team generator app in Node.js" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">Team Generator</p>
+          <p className="projectParagraph">A terminal app that was built with Node.js to collect user input and render an HTML file with the generated team based on collected inputs.</p>
+          <p className="projectParagraph">Tech Stack | HTML, CSS, JavaScript, Node.js, Jest.</p>
+          <div className="projectLinksDiv">
+            <a href="https://github.com/MrMaciejM/team-profile-generator" target="#blank">GitHub</a>
+            {/* <a href="#"  >Live Site</a> */}
+          </div>
+        </div>
+      </div>
+      {/* Project 10 */}
+      <div className="projectDiv">
+        <img className="projectImg" src={productLandingPageImg} alt="Product landing page" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">Product Landing Page</p>
+          <p className="projectParagraph">My first ever responsive product landing site that I have designed and built using HTML, CSS and JS.</p>
+          <p className="projectParagraph">Tech Stack | HTML, CSS, JavaScript.</p>
+          <div className="projectLinksDiv">
+            <a href="https://github.com/MrMaciejM/product-landing-page-v1" target="#blank">GitHub</a>
+            <a href="https://mrmaciejm.github.io/product-landing-page-v1/" target="#blank" >Live Site</a>
+          </div>
+        </div>
+      </div>
+      {/*  */}
     </div>    
   </section>
   )

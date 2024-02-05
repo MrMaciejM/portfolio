@@ -62,7 +62,7 @@ h2 {
   margin: 3rem auto;
   padding: 1rem 0;
   border: solid 2px red;
-  max-width: 80%;
+  width: 80%;
 }
 .projectDiv:nth-child(2n-1) {
   /* margin-left: 4rem; */
@@ -77,24 +77,21 @@ h2 {
 }
 .projectDiv:nth-child(2n) img {
   border: solid 3px yellow;
+  margin-left: 70%;
 }
-.titleAndParaDiv {
-  position: relative;
-  left: 20%;
-  max-width: 50%;
-  /* background-color: #032712; */
-  color: #cacaca;
-  /* background: linear-gradient(245deg, #000, #525252); */
-  padding: 1rem;
-  margin-top: -7rem;
-  z-index: 1;
+.projectDiv:nth-child(2n-1) .titleAndParaDiv {
+  left: 5%;
+  border: solid 3px red;
+}
+.projectDiv:nth-child(2n) .titleAndParaDiv {
+  left: 45%;
+  border: solid 3px #f8920d;
 }
 
 .projectImg {
   width: 30%;
   border-radius: 3px;
   /* margin-right: 50%; */
-  text-align: center;
   z-index: 0;
 }
 .titleAndParaDiv {
