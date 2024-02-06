@@ -6,8 +6,8 @@ import wrenchIcon from "../Assets/Images/wrench-icon-100x100.png"
 function Services() {
 
     return (
-        <section className="servicesSection">
-            <h2 id="servicesHeading">Services</h2>
+        <section className="servicesSection" id="servicesHeading">
+            <h2>Services</h2>
             <div className="servicesContainer">
                 <article className="servicesCards">
                     <img className="servicesCardsImg" src={codingIcon} alt="coding icon" />
