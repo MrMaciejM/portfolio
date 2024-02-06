@@ -25,6 +25,12 @@ function Header() {
     getElement.scrollIntoView({behavior: "smooth", block: "start"}); 
   }
 
+  function scrollToServices(e) {
+    e.preventDefault();
+    let getElement = document.getElementById("servicesHeading");
+    getElement.scrollIntoView({behavior: "smooth", block: "start"}); 
+  }
+
   function ShowScrollButton() {
     const [isVisible, setIsVisible] = useState(false);
     useEffect(() => {
@@ -64,7 +70,7 @@ function Header() {
             <nav className="pageNavLinksBox">
               <a className="linkAboutReviews" href="#" onClick={scrollToAboutReviews}>About & Reviews</a>
               <a href="#">Contact</a>
-              <a href="#">Services</a>
+              <a href="#" onClick={scrollToServices}>Services</a>
               <a id="projectsLink" href="#" onClick={scrollToProjects}>Projects</a>
             </nav>
             <ShowScrollButton />

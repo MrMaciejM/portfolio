@@ -11,7 +11,6 @@ import restaurantSiteImg from "../Assets/Images/restaurantSite-800x600.png"
 import daySchedulerImg from "../Assets/Images/dayScheduler-800x600.png"
 import teamGeneratorImg from "../Assets/Images/teamGenerator-800x600.png"
 import productLandingPageImg from "../Assets/Images/landingPage-800x600.png"
-import { useEffect, useState } from "react";
 
 
 function Projects() {
@@ -50,7 +49,7 @@ function Projects() {
         <div className="titleAndParaDiv">
           <style>{backgroundSpiralStyle}</style>        
           <p className="projectTitle">MyPixie</p>
-          <p className="projectParagraph">A social media website with an 'AI/Machine Learning powered pixie' that allows you to make posts, comments and view the latest news from around the world. The aim of this project is to develop and push my skills further, with the focus on authetnication, hosting/Cloud, back-end technologies, learning basics of ML/AI and implement new databases using PostgreSQL / MongoDB / SQL.</p>
+          <p className="projectParagraph">A social media website with an 'AI/ML-powered pixie' that allows you to make posts, comments, view the latest news from around the world and more. The aim of this project is to develop and push my skills further, with the focus on authetnication, hosting/Cloud, back-end technologies, learning basics of ML/AI and implement new databases using PostgreSQL / MongoDB / SQL.</p>
           <p className="projectParagraph">Tech Stack (TBC) | AI/ML, TypeScript, React, Node, SQL/PostegreSQL. </p>
           <div className="projectLinksDiv">
             {/* <a href="" style={{display: "none"}}>GitHub</a>

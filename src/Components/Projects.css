@@ -61,31 +61,31 @@ h2 {
 .projectDiv {
   margin: 3rem auto;
   padding: 1rem 0;
-  border: solid 2px red;
+  /* border: solid 2px red; */
   width: 80%;
 }
 .projectDiv:nth-child(2n-1) {
   /* margin-left: 4rem; */
-  border: solid 2px lime;
+  /* border: solid 2px lime; */
 }
 .projectDiv:nth-child(2n) {
   /* margin-left: 10rem; */
-  border: solid 2px cyan;
+  /* border: solid 2px cyan; */
 }
 .projectDiv:nth-child(2n-1) img {
-  border: solid 3px pink;
+  /* border: solid 3px pink; */
 }
 .projectDiv:nth-child(2n) img {
-  border: solid 3px yellow;
+  /* border: solid 3px yellow; */
   margin-left: 70%;
 }
 .projectDiv:nth-child(2n-1) .titleAndParaDiv {
   left: 5%;
-  border: solid 3px red;
+  /* border: solid 3px red; */
 }
 .projectDiv:nth-child(2n) .titleAndParaDiv {
   left: 45%;
-  border: solid 3px #f8920d;
+  /* border: solid 3px #f8920d; */
 }
 
 .projectImg {

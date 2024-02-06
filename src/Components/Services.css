@@ -1,0 +1,51 @@
+:root {
+  --servicesBackground: #0f0f0f;
+  --servicesHeaderColor: #d5d5d5;
+  --servicesParagraphsColor: #b8b8b8;
+
+  --servicesHeaderColor: #3eaa6b;
+
+  /* --linksColor: #d5d5d5; */
+}
+
+.servicesSection {
+  padding: 10rem 0;
+  background: linear-gradient(270deg, #1a1a1a, #0a0a0a);
+}
+.servicesContainer {
+  margin-top: 10rem;
+  /* border: solid 1px yellow; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.servicesCards {
+  border: solid 2px var(--servicesParagraphsColor);
+  padding: 0 2rem 5rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 11px;
+}
+.servicesCardsHeading {
+  color: var(--servicesParagraphsColor);
+  text-align: center;
+  font-size: 1.8rem;
+}
+.servicesCardsImg {
+  display: block;
+  margin: 3rem auto;
+  width: 30%;
+  height: auto;
+}
+.servicesCardsList {
+  color: var(--servicesParagraphsColor);
+  list-style-type: disc;
+  padding-top: 3rem;
+  max-width: 25rem;
+  word-wrap: break-word;
+  margin: 0;
+  /* border: solid 1px red; */
+}
+.servicesCardsList li {
+  margin: 1rem 0;
+  word-wrap: break-word;
+}

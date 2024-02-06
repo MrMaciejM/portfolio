@@ -7,6 +7,8 @@ import About from "./Components/About";
 import "./Components/About.css";
 import Projects from "./Components/Projects";
 import "./Components/Projects.css";
+import Services from "./Components/Services";
+import "./Components/Services.css";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <Main />
       <About />
       <Projects />
+      <Services />
     </div>
   );
 }
