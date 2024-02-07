@@ -34,6 +34,7 @@
 }
 header {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   top: 0;
   width: 100%;
@@ -42,7 +43,6 @@ header {
   margin-top: 0rem;
   border-bottom: 1px solid var(--headerBottomBorder);
   font-family: "Almarai", sans-serif;
-  position: fixed;
   background-color: var(--headerBackground);
   z-index: 2;
   /* border: solid 2px lime; */

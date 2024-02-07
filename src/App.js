@@ -9,6 +9,8 @@ import Projects from "./Components/Projects";
 import "./Components/Projects.css";
 import Services from "./Components/Services";
 import "./Components/Services.css";
+import Contact from "./Components/Contact";
+import "./Components/Contact.css";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <About />
       <Projects />
       <Services />
+      <Contact />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Animations.css"
 import "./About.css"; 
 import personIconImg from "../Assets/Images/person-icon-96x96.png"
@@ -13,9 +13,12 @@ import certPrinciples from "../Assets/Images/WYWM-Cert-PrinciplesOfProgramming-5
 
 function About() {
 
-  function EnlargeCertImage({className, src, altDesc}) {
+  function EnlargeCertImage({className, src, altDesc,}) {
     const [zoomLevel, setZoomLevel] = useState(1); 
     const [isZoomed, setIsZoomed] = useState(false);
+
+    
+    // console.log(e.target.className);
 
     let enlargeCertStyling = {
       transform: `scale(${zoomLevel})`,
@@ -30,15 +33,16 @@ function About() {
     } 
     
     const zoomHandler = () => {
-      console.log(src);
       if(src === certFE) {
         setZoomLevel(isZoomed ? 1 : 0.6);
         setIsZoomed(!isZoomed);  
-      } else {
+      } else{
         setZoomLevel(isZoomed ? 1 : 0.4); 
         setIsZoomed(!isZoomed); 
       }
+
     }   
+    // fixed sizing for FE Cert due to its different dimensions
     if(src === certFE) {
       console.log("certFE is detected")
       enlargeCertStyling.top = isZoomed ? '5%' : 'auto';      
@@ -46,6 +50,23 @@ function About() {
       console.log("no bueno")
       enlargeCertStyling.top = isZoomed ? '-35%' : 'auto';      
     }
+
+    // Reset zoom level when clicked outside of the certificate
+    useEffect( () => {
+      const checkForClickOutside = (e) => {
+        console.log(className);
+        console.log(e);
+        if (!e.target.closest(`.${className}`)) {
+          setZoomLevel(1); 
+          setIsZoomed(false);
+        }
+      }; 
+      document.body.addEventListener("click", checkForClickOutside); 
+      return () => {
+        document.body.removeEventListener('click', checkForClickOutside);
+      };
+    },[className])
+
     return (
       <img
         className={className}
@@ -57,8 +78,14 @@ function About() {
     );
   } 
 
+  function closeCertOutsideOfImage(e) {
+    //console.log("NODE NAME = ")
+    //console.log(e.target.className)
+    // .firstChild.nodeName
+  }
+
     return (
-        <section className="aboutSectionBox" id="aboutReviewsHeader">
+        <section className="aboutSectionBox" id="aboutReviewsHeader" onClick={closeCertOutsideOfImage} >
           <h2 >About & Reviews</h2>    
           {/* <div className="evenSpacer"></div> */}
           <div className="aboutParagraphsDiv">

@@ -1,0 +1,30 @@
+:root {
+  --contactHeaderColor: #d5d5d5;
+  --contactFontColor: #b8b8b8;
+  --contactColorGreen: #3eaa6b;
+}
+
+.contactSection {
+  background: linear-gradient(270deg, #0a0a0a, #1a1a1a);
+  padding: 10rem 0;
+}
+.contactContainer {
+  color: var(--contactFontColor);
+  text-align: center;
+}
+.contactContainer div {
+  font-size: 1.6rem;
+  margin-top: 5rem;
+}
+.contactContainer div:nth-of-type(1) p:nth-of-type(2) {
+  margin: 5rem 0 1rem 0;
+}
+.contactContainer div a {
+  color: var(--contactColorGreen);
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.contactSectionlinkedIn {
+  padding: 0;
+  margin: 0;
+}
