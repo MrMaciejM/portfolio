@@ -7,7 +7,7 @@ function Contact() {
             <div className="contactContainer">
               <div>
                 <p>You can get in touch by sending me a message on <a className="contactSectionlinkedIn" href="https://www.linkedin.com/in/maciejmatulewicz/" target="#">LinkedIn</a> or email!</p>
-                <p>Email me at:</p>
+                <p>Email:</p>
                 <a href="mailto:maciej456@icloud.com">maciej456@icloud.com</a>
               </div>                
             </div>            

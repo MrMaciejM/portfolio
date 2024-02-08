@@ -1,0 +1,14 @@
+:root {
+  --contactHeaderColor: #d5d5d5;
+  --contactFontColor: #b8b8b8;
+  --contactColorGreen: #3eaa6b;
+}
+
+footer {
+  color: white;
+  position: relative;
+  background-color: #0a0a0a;
+  padding: 1rem 0;
+  text-align: center;
+  z-index: 2;
+}

@@ -11,6 +11,8 @@ import Services from "./Components/Services";
 import "./Components/Services.css";
 import Contact from "./Components/Contact";
 import "./Components/Contact.css";
+import Footer from "./Components/Footer";
+import "./Components/Footer.css";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
       <Projects />
       <Services />
       <Contact />
+      <Footer />
     </div>
   );
 }
