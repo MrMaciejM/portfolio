@@ -101,16 +101,9 @@ a:hover {
 
 #projectsLink {
   color: var(--projectsLinkColor);
-  /* background-color: red; */
   background-color: var(--projectsLinkBackground);
-  /* border-radius: 20px; */
   border-radius: 3px;
-  /* text-decoration: none; */
   transition: all 0.5s;
-  /* background-color: var(--projectsLinkBackground); */
-  /* border-bottom: 2px solid var(--projectsLinkBackground); */
-  /* border: solid 1px var(--projectsLinkBackground); */
-  /* padding: 0.2rem 0.5rem; */
 }
 #projectsLink:hover {
   transition: all 0.5s;

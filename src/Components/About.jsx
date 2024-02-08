@@ -77,14 +77,8 @@ function About() {
     );
   } 
 
-  function closeCertOutsideOfImage(e) {
-    //console.log("NODE NAME = ")
-    //console.log(e.target.className)
-    // .firstChild.nodeName
-  }
-
     return (
-        <section className="aboutSectionBox" id="aboutReviewsHeader" onClick={closeCertOutsideOfImage} >
+        <section className="aboutSectionBox" id="aboutReviewsHeader" >
           <h2 >About & Reviews</h2>    
           {/* <div className="evenSpacer"></div> */}
           <div className="aboutParagraphsDiv">

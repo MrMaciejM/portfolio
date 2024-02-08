@@ -91,7 +91,21 @@ span {
 /* PROFILE PICTURE ANIMATION */
 @keyframes slowBlink {
   0% {
+    border-color: #b8b8b8;
+  }
+  25% {
+    border-color: #3eaa6b;
+  }
+  50% {
+    border-color: #59f499;
+  }
+  75% {
+    border-color: #3eaa6b;
   }
   100% {
+    border-color: #b8b8b8;
   }
+}
+.profilePicture {
+  animation: slowBlink 7s infinite;
 }
