@@ -10,7 +10,6 @@
 
 /* ABOUT & REVIEWS */
 .aboutSectionBox {
-  font-family: "Almarai";
   height: 100%;
   background: linear-gradient(270deg, #1a1a1a, #0a0a0a);
   padding-top: 10rem;
@@ -34,12 +33,6 @@
   color: var(--reviewsHeaderColor);
 }
 
-.singleReviewBox {
-  display: flex;
-  /* border: solid 1px lime; */
-  align-items: center;
-  user-select: none;
-}
 .personImg {
   width: 4rem;
   height: 4rem;
@@ -63,27 +56,20 @@
 }
 
 /*** ABOUT REVIEWS ***/
-.aboutReviewsParagraphIntro {
-  font-size: 1.2rem;
-  color: var(--aboutParagraphsColor);
-  text-align: left;
-  margin: 4rem auto -3rem auto;
-  width: 45%;
-}
 .aboutReviewsDiv {
-  width: 45%;
-  margin: 3rem auto 0 auto;
   /* border: solid 1px lime; */
   text-align: left;
 }
 
+.singleReviewBox {
+  display: flex;
+  user-select: none;
+  /* border: solid 1px lime; */
+}
+
 .aboutReviewsParagraphs {
-  font-size: 1.2rem;
   font-style: italic;
-  /* letter-spacing: 1px; */
   color: var(--aboutParagraphsColor);
-  text-align: left;
-  margin: 2rem auto;
 }
 
 /*** CERTIFICATES ***/

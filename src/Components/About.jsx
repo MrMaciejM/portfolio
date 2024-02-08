@@ -19,9 +19,6 @@ function About() {
     const [zoomLevel, setZoomLevel] = useState(1); 
     const [isZoomed, setIsZoomed] = useState(false);
 
-    
-    // console.log(e.target.className);
-
     let enlargeCertStyling = {
       transform: `scale(${zoomLevel})`,
       transition: 'transform 0.2s snap',
