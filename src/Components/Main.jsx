@@ -1,5 +1,7 @@
 import "./Animations.css"
 import "./Main.css"; 
+import "./Queries.css";
+
 import profilePicture from "../Assets/Images/profilePicGitHub-735x.png"
 import hexagonGrid from "../Assets/Images/hexagon-grid.png"
 function Main() {

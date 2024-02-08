@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Animations.css"
 import "./About.css"; 
+import "./Queries.css";
+
 import personIconImg from "../Assets/Images/person-icon-96x96.png"
 import certFE from "../Assets/Images/FE-Certificate-575x440.png"
 import certInfra from "../Assets/Images/Cert-Infrastructure-L3.png"

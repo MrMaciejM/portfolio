@@ -1,4 +1,6 @@
 import "./Footer.css"; 
+import "./Queries.css";
+
 
 
 function Footer() {

@@ -1,6 +1,8 @@
 import "./Animations.css"
 import "./Projects.css"; 
 import "./Header.css"
+import "./Queries.css";
+
 import myPixieImg from "../Assets/Images/myPixie-800x600-inDev.png"
 import cardChampionsImg from "../Assets/Images/cardChampions800x600.png"
 import globeTrotterImg from "../Assets/Images/globeTrotter800x600.png"

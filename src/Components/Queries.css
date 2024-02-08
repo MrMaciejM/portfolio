@@ -1,0 +1,59 @@
+/* MEDIA QUERIES */
+:root {
+  --mainGreen: #3eaa6b;
+}
+
+/* 2560x1080 */
+@media only screen and (max-width: 2560px) {
+  /*** HEADER ***/
+  .socialsLinksNav {
+    width: 12%;
+  }
+  .pageNavLinksBox a {
+    font-size: 1rem;
+  }
+  /*** HERO/MAIN ***/
+  .heroSectionBox {
+    display: flex;
+    /* border: solid 2px red; */
+  }
+  .heroBox {
+    text-align: center;
+    align-self: center;
+    /* border: solid 2px lime; */
+    margin-left: 10rem;
+  }
+  .profilePicture {
+    opacity: 1;
+    width: 30%;
+    border-radius: 50%;
+    border: solid 2px var(--mainGreen);
+    padding: 0.3rem;
+    margin-top: 3rem;
+  }
+
+  .verticalLineSeparator {
+    margin: 0 auto 0 22.8rem;
+    height: 500px;
+  }
+
+  .shortAboutBox {
+    position: relative;
+    width: 28%;
+    letter-spacing: 0.3px;
+    margin-right: 10rem;
+    /* border: solid 2px lime; */
+  }
+  /* MAIN ANIMATIONS */
+  @keyframes flyAndRotateH {
+    50% {
+      transform: translateX(15vw) rotate(180deg);
+    }
+  }
+  @keyframes flyAndRotateV {
+    50% {
+      transform: translateY(14vw) rotate(180deg);
+    }
+  }
+  /*** ABOUT/REVIEWS ***/
+}

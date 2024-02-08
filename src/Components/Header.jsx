@@ -1,5 +1,8 @@
 import "./Animations.css"
 import "./Header.css";
+import "./Queries.css";
+
+
 import linkedInLogoImg from "../Assets/Images/linkedin-100.png"
 import gitHubLogoImg from "../Assets/Images/github-100.png"
 import cvLogoImg from "../Assets/Images/CV-100-edited.png"

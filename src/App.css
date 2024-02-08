@@ -8,3 +8,12 @@ body {
   /* background-color: #101010; */
   /* background-color: #101010; */
 }
+
+.rulerMain {
+  height: 13300px;
+  width: 3px;
+  background: yellow;
+  position: absolute;
+  /* left: 50%; */
+  margin: 0 50%;
+}

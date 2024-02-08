@@ -1,5 +1,4 @@
 :root {
-  /* Teal main: #6dabc8 */
   --backgroundColor: #1f1f1f;
   --headerBackground: #080808;
   --headerBottomBorder: transparent;
@@ -8,23 +7,7 @@
   --projectsLinkColor: #1b1b1b;
   --projectsLinkBackground: #3eaa6b;
 
-  /* 5ce997 */
-  /* 00c9c9 */
-  /* #c9b73c */
-
   --navLinksHover: #d6d6d6;
-  /* #f4e58f */
-  /* #cdc280 tan gold / sand */
-
-  /* 
-    OG Gold: #a99932
-    My gold: #afa03c
-    Sea green: #43a576
-    Royal Blue Hex Code: #4169E1
-    Royal Purple Hex Code: #7851A9
-    Gold Hex Code: #FFD700
-    Brass Hex Code: #B5A642
-  */
 }
 
 @font-face {

@@ -1,4 +1,6 @@
-import "../Components/Contact.css"; 
+import "../Components/Contact.css";
+import "./Queries.css";
+
 
 function Contact() {
     return(

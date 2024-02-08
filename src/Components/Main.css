@@ -20,28 +20,22 @@
 /* ************* */
 /*** MAIN CODE ***/
 main {
-  /* background-color: #2a2a2a; */
   height: 800px;
   font-family: "Almarai";
   margin-bottom: 0rem;
-  /* margin-top: 7rem; */
   padding-top: 10rem;
-  /* background: radial-gradient(circle, #2c2c2c, #1b1b1b); */
-  /* background: linear-gradient(140deg, #111111, #111111, #23e293 90%, #111111); */
   background: linear-gradient(130deg, #1a1a1a, #0a0a0a);
-
-  /* background-color: #664848; */
   /* border: solid 5px red; */
 }
 
 .heroSectionBox {
-  display: flex;
+  /* display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: center; */
 }
 .heroBox {
-  margin-left: 4rem;
-  margin-top: 6.5rem;
+  /* margin-left: 4rem;
+  margin-top: 6.5rem; */
 }
 .heroBox h1 {
   font-size: 4rem;
@@ -54,30 +48,24 @@ main {
   margin-left: 4.3rem;
 }
 .profilePicture {
-  opacity: 0;
+  /* opacity: 1;
   width: 30%;
   border-radius: 50%;
-  /* border: dashed 2px var(--projectsLinkBackground); */
-  margin-left: 3.4rem;
-  /* filter: blur(10px); */
-  /* transition: all 1s; */
+  margin-left: 3.4rem; */
 }
 
 .verticalLineSeparator {
   background-color: var(--verticalLineSeparatorColor);
   width: 1px;
-  height: 400px;
-  margin-left: -11rem;
-  margin-right: 13.1rem;
-  margin-top: 5rem;
   border-radius: 16px;
 }
 
 .shortAboutBox {
   position: relative;
   width: 28%;
+  align-self: center;
   letter-spacing: 0.3px;
-  /* border: solid 1px lime; */
+  /* border: solid 2px lime; */
 }
 .hexagonGrid {
   position: absolute;
@@ -93,9 +81,17 @@ main {
   margin-top: 1rem;
 }
 .shortAboutBox p:first-of-type {
-  margin-top: 11rem;
+  /* margin-top: 11rem; */
 }
 
 span {
   color: var(--spanColorMain);
+}
+
+/* PROFILE PICTURE ANIMATION */
+@keyframes slowBlink {
+  0% {
+  }
+  100% {
+  }
 }

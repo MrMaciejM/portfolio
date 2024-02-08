@@ -1,4 +1,7 @@
-import "../Components/Services.css"; 
+import "../Components/Services.css";
+import "./Queries.css";
+
+
 import codingIcon from "../Assets/Images/coding-icon-100x100.png"
 import webDesignIcon from "../Assets/Images/web-design-icon-100x100.png"
 import wrenchIcon from "../Assets/Images/wrench-icon-100x100.png"
