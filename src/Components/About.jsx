@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./Animations.css"
 import "./About.css"; 
 import "./Queries.css";
@@ -15,67 +14,58 @@ import certPrinciples from "../Assets/Images/WYWM-Cert-PrinciplesOfProgramming-5
 
 function About() {
 
-  function EnlargeCertImage({className, src, altDesc,}) {
-    const [zoomLevel, setZoomLevel] = useState(1); 
-    const [isZoomed, setIsZoomed] = useState(false);
+  function EnlargeCertImage({ className, src, altDesc }) {
 
-    let enlargeCertStyling = {
-      transform: `scale(${zoomLevel})`,
-      transition: 'transform 0.2s snap',
-      position: isZoomed ? 'fixed' : 'static',
-      top: isZoomed ? '-40%' : 'auto',
-      left: isZoomed ? '70%' : 'auto',
-      transformOrigin: 'center center',
-      zIndex: 2,
-      marginLeft: isZoomed ? '-50%' : 'auto',
-      marginRight: isZoomed ? '-50%' : 'auto',
-    } 
-    
-    const zoomHandler = () => {
-      if(src === certFE) {
-        setZoomLevel(isZoomed ? 1 : 0.6);
-        setIsZoomed(!isZoomed);  
-      } else{
-        setZoomLevel(isZoomed ? 1 : 0.4); 
-        setIsZoomed(!isZoomed); 
+    const feCertZoomedIn = "feCertZoomedIn";
+    const infraCertZoomedIn = "infraCertZoomedIn";
+    const wywmCertZoomedIn = "wywmCertZoomedIn";
+
+    const zoomHandler = (e) => {
+      let certClass = e.target.classList;     
+      
+      switch(src) {
+        case certFE:
+          window.addEventListener("wheel", () => {
+            e.target.classList.remove(feCertZoomedIn);
+          })          
+          if(certClass.contains(feCertZoomedIn) ) {
+            e.target.classList.remove(feCertZoomedIn);
+          } else {          
+            e.target.classList.add(feCertZoomedIn); 
+          }
+          break; 
+        case certInfra:
+          window.addEventListener("wheel", () => {
+            e.target.classList.remove(infraCertZoomedIn);
+          })
+          if(certClass.contains(infraCertZoomedIn) ) {
+            e.target.classList.remove(infraCertZoomedIn);
+          } else {          
+            e.target.classList.add(infraCertZoomedIn); 
+          }
+          break;      
+        default:
+          window.addEventListener("wheel", () => {
+            e.target.classList.remove(wywmCertZoomedIn);
+          })
+          if(certClass.contains(wywmCertZoomedIn) ) {
+            e.target.classList.remove(wywmCertZoomedIn);
+          } else {          
+            e.target.classList.add(wywmCertZoomedIn); 
+          } 
       }
-
-    }   
-    // fixed sizing for FE Cert due to its different dimensions
-    if(src === certFE) {
-      console.log("certFE is detected")
-      enlargeCertStyling.top = isZoomed ? '5%' : 'auto';      
-    } else {
-      console.log("no bueno")
-      enlargeCertStyling.top = isZoomed ? '-35%' : 'auto';      
-    }
-
-    // Reset zoom level when clicked outside of the certificate
-    useEffect( () => {
-      const checkForClickOutside = (e) => {
-        console.log(className);
-        console.log(e);
-        if (!e.target.closest(`.${className}`)) {
-          setZoomLevel(1); 
-          setIsZoomed(false);
-        }
-      }; 
-      document.body.addEventListener("click", checkForClickOutside); 
-      return () => {
-        document.body.removeEventListener('click', checkForClickOutside);
-      };
-    },[className])
+    };
 
     return (
       <img
         className={className}
         src={src}
         alt={altDesc}
-        style={enlargeCertStyling}
         onClick={zoomHandler}
       />
     );
-  } 
+  
+} // EnlargeCertImage function end  
 
     return (
         <section className="aboutSectionBox" id="aboutReviewsHeader" >

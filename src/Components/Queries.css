@@ -73,4 +73,37 @@
     /* border: solid 1px lime; */
   }
   /* MY CERTIFICATES */
+  .certificatesBoxImg {
+    /* Adjust zoom level for smaller screens */
+    /* top: 20% !important; */
+    /* left: 50% auto !important; */
+    /* border: solid 2px red; */
+  }
+  /* Front-End Cert zoom in */
+  .feCertZoomedIn,
+  .infraCertZoomedIn,
+  .wywmCertZoomedIn {
+    transition: "transform 0.2s snap";
+    position: fixed;
+    transform-origin: center center;
+    z-index: 2;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+
+  .feCertZoomedIn {
+    transform: scale(0.6);
+    top: -12%;
+    left: 20%;
+  }
+  .infraCertZoomedIn {
+    transform: scale(0.38);
+    top: -62%;
+    left: 20%;
+  }
+  .wywmCertZoomedIn {
+    transform: scale(0.35);
+    top: -65%;
+    left: 20%;
+  }
 }
