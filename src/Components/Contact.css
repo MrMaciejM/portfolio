@@ -13,7 +13,6 @@
   text-align: center;
 }
 .contactContainer div {
-  font-size: 1.6rem;
   margin-top: 5rem;
 }
 .contactContainer div:nth-of-type(1) p:nth-of-type(2) {
@@ -21,7 +20,6 @@
 }
 .contactContainer div a {
   color: var(--contactColorGreen);
-  font-size: 1.4rem;
   text-decoration: underline;
 }
 .contactSectionlinkedIn {

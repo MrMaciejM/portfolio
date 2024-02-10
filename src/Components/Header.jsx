@@ -33,6 +33,11 @@ function Header() {
     let getElement = document.getElementById("servicesHeading");
     getElement.scrollIntoView({behavior: "smooth", block: "start"}); 
   }
+  function scrollToContact(e) {
+    e.preventDefault();
+    let getElement = document.getElementById("contactSection");
+    getElement.scrollIntoView({behavior: "smooth", block: "start"}); 
+  }
 
   function ShowScrollButton() {
     const [isVisible, setIsVisible] = useState(false);
@@ -55,7 +60,7 @@ function Header() {
         <header className="sectionSpacing">
             <nav className="socialsLinksNav">
             <a className="linkedInLogoLink" 
-                href="https://github.com/MrMaciejM"
+                href="https://www.linkedin.com/in/maciejmatulewicz/"
                 target="#">
                   <img className="linkedInLogoImg socialsLogosImgs" src={linkedInLogoImg} alt="linkedIn Logo" />
               </a>
@@ -65,14 +70,14 @@ function Header() {
                   <img className="gitHubLogoImg socialsLogosImgs" src={gitHubLogoImg} alt="GitHub Logo" />
               </a>              
             <a className="cvLogoLink"
-                href="https://github.com/MrMaciejM"
-                target="#" >
+                href="/MaciejMatulewiczCV.pdf"
+                target="_blank" rel="noopener noreferrer" >
                   <img className="cvLogoImg socialsLogosImgs" src={cvLogoImg} alt="CV Logo" />
               </a>
             </nav>
             <nav className="pageNavLinksBox">
               <a className="linkAboutReviews" href="#" onClick={scrollToAboutReviews}>About & Reviews</a>
-              <a href="#">Contact</a>
+              <a href="#" onClick={scrollToContact}>Contact</a>
               <a href="#" onClick={scrollToServices}>Services</a>
               <a id="projectsLink" href="#" onClick={scrollToProjects}>Projects</a>
             </nav>

@@ -19,7 +19,7 @@ import "./Components/Queries.css";
 function App() {
   return (
     <div className="App">
-      <div className="rulerMain"></div>
+      {/* <div className="rulerMain"></div> */}
       <Header />
       <Main />
       <About />

@@ -22,18 +22,15 @@
 .servicesCards {
   border: solid 2px var(--servicesParagraphsColor);
   padding: 0 2rem 5rem 2rem;
-  font-size: 1.2rem;
   border-radius: 11px;
 }
 .servicesCardsHeading {
   color: var(--servicesParagraphsColor);
   text-align: center;
-  font-size: 1.8rem;
 }
 .servicesCardsImg {
   display: block;
   margin: 3rem auto;
-  width: 30%;
   height: auto;
 }
 .servicesCardsList {

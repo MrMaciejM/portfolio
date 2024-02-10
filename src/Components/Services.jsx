@@ -36,7 +36,7 @@ function Services() {
                     <ul className="servicesCardsList">
                         <li>Technical support for software and apps</li>      
                         <li>Write technical guides</li>
-                        <li>Troubleshooting complex issues</li>
+                        <li>Troubleshoot complex issues</li>
                     </ul>
                 </article>
             </div>

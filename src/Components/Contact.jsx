@@ -4,7 +4,7 @@ import "./Queries.css";
 
 function Contact() {
     return(
-        <section className="contactSection">
+        <section className="contactSection" id="contactSection">
             <h2>Contact</h2>
             <div className="contactContainer">
               <div>

@@ -10,9 +10,9 @@ body {
 }
 
 .rulerMain {
-  height: 13300px;
+  height: 13230px;
   width: 3px;
-  background: yellow;
+  background: red;
   position: absolute;
   /* left: 50%; */
   margin: 0 50%;
