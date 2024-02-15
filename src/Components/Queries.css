@@ -3,11 +3,35 @@
   --mainGreen: #3eaa6b;
 }
 
+/* NOTE: hide helper class is in the side menu section (856px width) */
+
 /*****************/
 /****2560x1080****/
 /*****************/
 @media only screen and (max-width: 2560px) {
+  /* GLOBAL */
+  h2 {
+    font-size: 3rem;
+  }
   /*** HEADER ***/
+  header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 5rem;
+    margin-top: 0rem;
+    border-bottom: 1px solid var(--headerBottomBorder);
+    font-family: "Almarai", sans-serif;
+    background-color: var(--headerBackground);
+    z-index: 2;
+    /* border: solid 2px lime; */
+  }
+  .menuIconImg {
+    display: none;
+  }
   .socialsLinksNav {
     width: 12%;
   }
@@ -33,6 +57,9 @@
     align-self: center;
     margin-left: 15rem;
   }
+  .heroBox h1 {
+    font-size: 4rem;
+  }
   .profilePicture {
     opacity: 1;
     width: 30%;
@@ -41,13 +68,12 @@
     padding: 0.3rem;
     margin-top: 3rem;
   }
-
   .verticalLineSeparator {
     margin: 0 auto 0 17.8rem;
     height: 500px;
   }
-
   .shortAboutBox {
+    font-size: 1.2rem;
     position: relative;
     width: 28%;
     letter-spacing: 0.3px;
@@ -66,10 +92,25 @@
     }
   }
   /*** ABOUT/REVIEWS ***/
+  .aboutParagraphs {
+    font-size: 1.2rem;
+  }
   .aboutReviewsDiv {
     width: 45%;
     margin: 3rem auto;
     /* border: solid 1px lime; */
+  }
+  .aboutParagraphsDiv {
+    width: 45%;
+    margin: 0 auto;
+    /* border: solid 1px lime; */
+    text-align: left;
+  }
+  .personImg {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+    filter: invert(0.85);
   }
   .singleReviewBox {
     align-items: center;
@@ -83,7 +124,24 @@
     /* border: solid 1px lime; */
   }
   /* MY CERTIFICATES */
-  /* Front-End Cert zoom in */
+  .certificatesContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem auto 5rem auto;
+    margin-top: 5rem;
+    row-gap: 5rem;
+    grid-template-areas:
+      "a a a b b b"
+      "c c d d e e"
+      "f f g g h h";
+  }
+  .certificatesBoxParagraphs {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--aboutParagraphsColor);
+  }
   .feCertZoomedIn,
   .infraCertZoomedIn,
   .wywmCertZoomedIn {
@@ -114,10 +172,47 @@
     font-size: 1.4rem;
     margin-bottom: 1rem;
   }
+  .projectDiv:nth-child(2n) img {
+    /* border: solid 3px yellow; */
+    margin-left: 70%;
+  }
+  .projectDiv:nth-child(2n-1) .titleAndParaDiv {
+    left: 5%;
+    /* border: solid 3px red; */
+  }
+  .projectDiv:nth-child(2n) .titleAndParaDiv {
+    left: 45%;
+    /* border: solid 3px #f8920d; */
+  }
   .projectParagraph {
     font-size: 1rem;
   }
+  .projectDiv {
+    margin: 3rem auto;
+    padding: 1rem 0;
+    /* border: solid 2px red; */
+    width: 80%;
+  }
+  .projectLinksDiv a {
+    /* border: solid 2px #3eaa6b; */
+    padding: 0.8rem;
+    border-radius: 14px;
+    background-color: #4ac97f;
+    color: #141414;
+    font-weight: bold;
+  }
+  .projectImg {
+    width: 30%;
+    border-radius: 3px;
+    /* margin-right: 50%; */
+    z-index: 0;
+  }
   /*** SERVICES ***/
+  .servicesContainer {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
   .servicesCards {
     width: 450px;
     font-size: 1.1rem;
@@ -214,5 +309,763 @@
   }
   .servicesCardsHeading {
     font-size: 1.5rem;
+  }
+}
+
+/*****************/
+/****1820px****/
+/*****************/
+@media only screen and (max-width: 1820px) {
+  /*** HERO/MAIN ***/
+  .heroBox {
+    margin-left: 5rem;
+  }
+  .profilePicture {
+    width: 30%;
+    padding: 0.3rem;
+    margin-top: 3rem;
+  }
+  .verticalLineSeparator {
+    margin: 0 auto 0 5.5rem;
+    height: 500px;
+  }
+  .shortAboutBox {
+    font-size: 1.1rem;
+    position: relative;
+    width: 28%;
+    margin-right: 8rem;
+  }
+}
+
+/*****************/
+/****1650px****/
+/*****************/
+@media only screen and (max-width: 1650px) {
+  /*** HEADER ***/
+  .socialsLinksNav {
+    width: 20%;
+  }
+  /*** HERO/MAIN ***/
+  .heroBox {
+    margin-left: 0rem;
+  }
+  .verticalLineSeparator {
+    margin: 0 auto 0 4.3rem;
+    height: 500px;
+  }
+  .shortAboutBox {
+    font-size: 1.1rem;
+    position: relative;
+    width: 28%;
+    margin-right: 8rem;
+  }
+  /* MY CERTIFICATES */
+  .feCertZoomedIn {
+    transform: scale(0.6);
+    top: 7%;
+    left: 20%;
+  }
+  .infraCertZoomedIn {
+    transform: scale(0.48);
+    top: -20%;
+    left: 20%;
+  }
+  .wywmCertZoomedIn {
+    transform: scale(0.45);
+    top: -25%;
+    left: 20%;
+  }
+}
+
+/*****************/
+/****1500px****/
+/*****************/
+@media only screen and (max-width: 1650px) {
+  /*** HERO/MAIN ***/
+  .heroBox {
+    margin-left: 0rem;
+  }
+  .verticalLineSeparator {
+    margin: 0 auto 0 -0.5rem;
+    height: 500px;
+  }
+  .shortAboutBox {
+    font-size: 1.1rem;
+    position: relative;
+    width: 30%;
+    margin-right: 8rem;
+  }
+  /*** SERVICES ***/
+  .servicesCards {
+    width: 350px;
+  }
+  .servicesCardsImg {
+    width: 20%;
+  }
+  .servicesCardsHeading {
+    font-size: 1.4rem;
+  }
+}
+
+/*****************/
+/****1400px****/
+/*****************/
+@media only screen and (max-width: 1400px) {
+  /* GLOBAL */
+  h2 {
+    font-size: 2.4rem;
+  }
+  /*** HEADER ***/
+  .socialsLinksNav {
+    width: 22%;
+  }
+  .ShowScrollButton {
+    left: 48.4%;
+    top: 89%;
+  }
+  /*** HERO/MAIN ***/
+  .heroBox {
+    margin-left: -5rem;
+  }
+  .heroBox h1 {
+    font-size: 3rem;
+  }
+  .profilePicture {
+    width: 30%;
+  }
+  .verticalLineSeparator {
+    margin: 0 auto 0 1.4rem;
+    height: 500px;
+  }
+  .shortAboutBox {
+    width: 30%;
+    margin-right: 5rem;
+  }
+  /* ABOUT & REVIEWS */
+  .aboutParagraphs {
+    font-size: 1.1rem;
+  }
+  .aboutReviewsParagraphs {
+    font-size: 1.1rem;
+    /* border: solid 1px lime; */
+  }
+  /* MY CERTIFICATES */
+  .feCertZoomedIn {
+    transform: scale(0.7);
+    top: 15%;
+    left: 20%;
+  }
+  .infraCertZoomedIn {
+    transform: scale(0.68);
+    top: -10%;
+    left: 20%;
+  }
+  .wywmCertZoomedIn {
+    transform: scale(0.6);
+    top: -14%;
+    left: 20%;
+  }
+}
+
+/*****************/
+/****1200px****/
+/*****************/
+@media only screen and (max-width: 1200px) {
+  /*** HEADER ***/
+  .socialsLinksNav {
+    width: 28%;
+  }
+  .ShowScrollButton {
+    left: 48%;
+    top: 89%;
+  }
+  /*** HERO/MAIN ***/
+  .heroBox {
+    margin-left: -5rem;
+  }
+  .heroBox h1 {
+    font-size: 3rem;
+  }
+  .profilePicture {
+    width: 25%;
+    margin-top: 3rem;
+  }
+  .verticalLineSeparator {
+    margin: 0 auto 0 -4.8rem;
+    height: 500px;
+  }
+  .shortAboutBox {
+    margin-right: 5rem;
+  }
+
+  /* MY CERTIFICATES */
+  .feCertZoomedIn {
+    transform: scale(0.8);
+  }
+  .infraCertZoomedIn {
+    transform: scale(0.78);
+    top: 1%;
+    left: 20%;
+  }
+  .wywmCertZoomedIn {
+    transform: scale(0.7);
+    top: -5%;
+    left: 20%;
+  }
+  /*** PROJECTS ***/
+  .projectDiv {
+    margin: 3rem 1rem;
+    padding: 1rem 0;
+    /* border: solid 2px red; */
+    width: 90%;
+  }
+  .titleAndParaDiv {
+    position: relative;
+    width: 60%;
+    color: #cacaca;
+    padding: 1rem;
+    margin-top: -7rem;
+    z-index: 1;
+    /* border: solid 1px lime; */
+  }
+  .projectImg {
+    width: 40%;
+    border-radius: 3px;
+    z-index: 0;
+  }
+  .projectLinksDiv a {
+    /* border: solid 2px #3eaa6b; */
+    padding: 0.5rem;
+    border-radius: 14px;
+    background-color: #4ac97f;
+    color: #141414;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  /*** SERVICES ***/
+  .servicesCards {
+    width: 300px;
+  }
+  .servicesCardsImg {
+    width: 30%;
+  }
+  .servicesCardsHeading {
+    font-size: 1.3rem;
+  }
+}
+
+/*****************/
+/****1100px****/
+/*****************/
+@media only screen and (max-width: 1100px) {
+  /*** HEADER ***/
+  .socialsLinksNav {
+    width: 32%;
+  }
+  /*** HERO/MAIN ***/
+  .heroBox {
+    margin-left: -8rem;
+  }
+  .profilePicture {
+    width: 25%;
+    margin-top: 3rem;
+  }
+  .verticalLineSeparator {
+    margin: 0 auto 0 -4.8rem;
+    height: 500px;
+  }
+  .shortAboutBox {
+    font-size: 1rem;
+    margin-right: 5rem;
+  }
+  /* MY CERTIFICATES */
+  .feCertZoomedIn {
+    transform: scale(0.8);
+  }
+  .infraCertZoomedIn {
+    transform: scale(0.78);
+    top: 1%;
+    left: 20%;
+  }
+  .wywmCertZoomedIn {
+    transform: scale(0.7);
+    top: -5%;
+    left: 20%;
+  }
+  /*** PROJECTS ***/
+  .projectDiv:nth-child(2n-1) {
+    margin-left: 4rem;
+    /* border: solid 2px lime; */
+  }
+  .projectDiv:nth-child(2n) img {
+    /* border: solid 3px yellow; */
+    margin-left: 60%;
+  }
+  .titleAndParaDiv {
+    position: relative;
+    width: 60%;
+    color: #cacaca;
+    padding: 1rem;
+    margin-top: -7rem;
+    z-index: 1;
+    /* border: solid 1px lime; */
+  }
+  .projectImg {
+    width: 40%;
+    border-radius: 3px;
+    z-index: 0;
+  }
+  .projectLinksDiv a {
+    /* border: solid 2px #3eaa6b; */
+    padding: 0.5rem;
+    border-radius: 14px;
+    background-color: #4ac97f;
+    color: #141414;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  /*** SERVICES ***/
+  .servicesCards {
+    width: 300px;
+  }
+  .servicesCardsImg {
+    width: 30%;
+  }
+  .servicesCardsHeading {
+    font-size: 1.3rem;
+  }
+}
+
+/*****************/
+/****1000px****/
+/*****************/
+@media only screen and (max-width: 1000px) {
+  /*** HEADER ***/
+  .socialsLinksNav {
+    width: 39%;
+  }
+  .ShowScrollButton {
+    left: 47.7%;
+    top: 89%;
+  }
+
+  /*** HERO/MAIN ***/
+  .heroBox {
+    margin-left: -11.2rem;
+  }
+  .profilePicture {
+    width: 25%;
+    margin-top: 3rem;
+  }
+  .verticalLineSeparator {
+    margin: 0 auto 0 -4.8rem;
+    height: 500px;
+  }
+
+  /* ABOUT & REVIEWS */
+  .aboutParagraphs {
+    font-size: 1rem;
+    /* border: solid 1px lime; */
+    width: 110%;
+  }
+  .aboutReviewsParagraphs {
+    font-size: 1rem;
+    /* border: solid 1px lime; */
+  }
+
+  /* MY CERTIFICATES */
+  .feCertZoomedIn {
+    transform: scale(0.8);
+  }
+  .infraCertZoomedIn {
+    transform: scale(0.78);
+    top: 1%;
+    left: 20%;
+  }
+  .wywmCertZoomedIn {
+    transform: scale(0.7);
+    top: -5%;
+    left: 20%;
+  }
+
+  /*** PROJECTS ***/
+  .projectDiv:nth-child(2n-1) {
+    margin-left: 4rem;
+    /* border: solid 2px lime; */
+  }
+  .projectDiv:nth-child(2n) img {
+    /* border: solid 3px yellow; */
+    margin-left: 60%;
+  }
+  .titleAndParaDiv {
+    position: relative;
+    width: 60%;
+    color: #cacaca;
+    padding: 1rem;
+    margin-top: -7rem;
+    z-index: 1;
+    /* border: solid 1px lime; */
+  }
+  .projectImg {
+    width: 40%;
+    border-radius: 3px;
+    z-index: 0;
+  }
+  .projectLinksDiv a {
+    /* border: solid 2px #3eaa6b; */
+    padding: 0.5rem;
+    border-radius: 14px;
+    background-color: #4ac97f;
+    color: #141414;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  /*** SERVICES ***/
+  .servicesCards {
+    width: 250px;
+    font-size: 0.9rem;
+  }
+  .servicesCardsImg {
+    width: 30%;
+  }
+  .servicesCardsHeading {
+    font-size: 1.2rem;
+  }
+
+  /*** CONTACT ***/
+  .contactContainer div {
+    font-size: 1.1rem;
+  }
+  /* EMAIL LINK - BOTTOM */
+  .contactContainer div a {
+    font-size: 1.1rem;
+  }
+}
+
+/*****************/
+/****900px****/
+/*****************/
+@media only screen and (max-width: 900px) {
+  h2 {
+    font-size: 2rem;
+  }
+  /*** HERO/MAIN ***/
+  .heroBox {
+    margin-left: -13.2rem;
+  }
+  .profilePicture {
+    width: 25%;
+    margin-top: 3rem;
+  }
+  .verticalLineSeparator {
+    margin: 0 auto 0 -6.2rem;
+    height: 500px;
+  }
+
+  /* MY CERTIFICATES */
+  .certificatesBoxParagraphs {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  /* PROJECTS */
+  .projectTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .projectParagraph {
+    font-size: 0.9rem;
+  }
+}
+
+/*****************/
+/****856px****/
+/*****************/
+@media only screen and (max-width: 856px) {
+  header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 5rem;
+    margin-top: 0rem;
+    border-bottom: 1px solid var(--headerBottomBorder);
+    background-color: transparent;
+    z-index: 2;
+    /* border: solid 2px lime; */
+  }
+  .menuIconImg {
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    left: -4rem;
+    width: 30px;
+    height: 33px;
+    filter: brightness(1.5);
+  }
+  .menuIconImg:hover {
+    cursor: pointer;
+  }
+  .menuIconImg:active {
+    filter: grayscale(1);
+  }
+  .menuIconIsClicked {
+    transform: rotate(90deg);
+  }
+  .sideNav {
+    /* background-color: black; */
+    width: 100px;
+    height: 100px;
+  }
+  #socialsLinksNav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: fixed;
+    top: 0;
+    left: 6%;
+    padding-top: 0.9rem;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 0px;
+    width: 250px;
+    height: 100%;
+    z-index: -1;
+  }
+  #pageNavLinksBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    position: fixed;
+    top: 45%;
+    left: 3%;
+  }
+  .socialsLogosImgs {
+    width: 3rem;
+  }
+  .ShowScrollButton {
+    font-size: 2.2rem;
+    font-weight: 900;
+    height: 50px;
+    width: 50px;
+    left: 46.9%;
+    top: 89%;
+    z-index: 2;
+  }
+  .hide {
+    display: none !important;
+  }
+
+  /*** HERO/MAIN ***/
+  .heroSectionBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4rem;
+  }
+  .heroBox {
+    margin-left: 0rem;
+  }
+  .profilePicture {
+    width: 25%;
+    margin-top: 3rem;
+  }
+  .verticalLineSeparator {
+    margin: -10rem auto 0 auto;
+    transform: rotate(90deg);
+    height: 500px;
+  }
+  .shortAboutBox {
+    position: relative;
+    align-self: center;
+    letter-spacing: 0.3px;
+    margin: -11rem auto 0 auto;
+    width: 500px;
+    /* border: solid 2px lime; */
+  }
+  /* MAIN ANIMATIONS */
+  @keyframes flyAndRotateH {
+    50% {
+      transform: translateX(75vw) rotate(180deg);
+    }
+  }
+  @keyframes flyAndRotateV {
+    50% {
+      /* transform: translateY(20vw) rotate(180deg); */
+      transform: translateX(55vw) rotate(180deg);
+    }
+  }
+
+  /*** SERVICES ***/
+  .servicesContainer {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 3rem;
+  }
+  .servicesCards {
+    padding: 0 2rem 5rem 2rem;
+    border-radius: 11px;
+    width: 300px;
+  }
+}
+
+/*****************/
+/****660px****/
+/*****************/
+@media only screen and (max-width: 660px) {
+  /*** HEADER ***/
+  #socialsLinksNav {
+    padding-left: 1rem;
+  }
+  .ShowScrollButton {
+    font-size: 1.8rem;
+    height: 40px;
+    width: 40px;
+    left: 47%;
+    top: 89%;
+  }
+  /*** ABOUT & REVIEWS ***/
+  .aboutParagraphs {
+    margin: 2rem auto 0 -5rem;
+    width: 160%;
+    /* border: solid 1px lime; */
+  }
+  .personImg {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+    filter: invert(0.85);
+  }
+  .singleReviewBox {
+    width: 150%;
+    margin-left: -6rem;
+  }
+  /* MY CERTIFICATES */
+  .certificatesContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem auto 5rem auto;
+    margin-top: 5rem;
+    row-gap: 5rem;
+    grid-template-areas:
+      "a a a b b b"
+      "c c c d d d"
+      "e e e f f f"
+      "g g g h h h";
+  }
+  /*** PROJECTS ***/
+  .projectDiv {
+    margin: 3rem 1rem;
+    padding: 1rem 0;
+    /* border: solid 2px red; */
+    width: fit-content;
+  }
+  .projectDiv:nth-child(2n) img {
+    /* border: solid 3px yellow; */
+    margin-left: 53%;
+  }
+  .projectDiv:nth-child(2n-1) .titleAndParaDiv {
+    left: 20%;
+    top: 1rem;
+    /* border: solid 3px red; */
+  }
+  .projectDiv:nth-child(2n) .titleAndParaDiv {
+    left: 27%;
+    top: 1rem;
+    /* border: solid 3px red; */
+  }
+  .projectLinksDiv a {
+    /* border: solid 2px #3eaa6b; */
+    padding: 0.5rem 0.5rem;
+    border-radius: 14px;
+    background-color: #4ac97f;
+    color: #141414;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+}
+
+/*****************/
+/****500px****/
+/*****************/
+@media only screen and (max-width: 500px) {
+  .profilePicture {
+    width: 40%;
+    border-radius: 50%;
+    padding: 0.3rem;
+    margin-top: 3.5rem;
+  }
+  .verticalLineSeparator {
+    margin: -6rem auto 2rem auto;
+    height: 350px;
+  }
+  .shortAboutBox {
+    font-size: 1.1rem;
+    position: relative;
+    width: 70%;
+    letter-spacing: 0.3px;
+    padding: 2rem 0rem;
+    margin: -11rem 0 5rem 1rem;
+    /* border: solid 2px red; */
+  }
+  /* ABOUT & REVIEWS */
+  .aboutParagraphs {
+    font-size: 1.1rem;
+    margin-left: -4rem;
+  }
+  .singleReviewBox {
+    width: 150%;
+    margin-left: -4rem;
+  }
+  /* MY CERTIFICATES */
+  .feCertZoomedIn {
+    transform: scale(1.4);
+    top: 30%;
+    left: 17%;
+  }
+  .infraCertZoomedIn {
+    transform: scale(1.4);
+    top: 18%;
+    left: 17.5%;
+  }
+  .wywmCertZoomedIn {
+    transform: scale(1.5);
+    top: 18%;
+    left: 17.5%;
+  }
+  /* PROJECTS */
+  .projectDiv {
+    /* border: solid 2px red; */
+    width: 48%;
+  }
+  .projectImg {
+    width: 250px;
+    border-radius: 3px;
+    z-index: 0;
+  }
+  .projectDiv:nth-child(2n) img {
+    /* border: solid 3px yellow; */
+    margin-left: 22%;
+    
+  }
+  .projectDiv:nth-child(2n-1) .titleAndParaDiv {
+    left: -5%;
+    top: 1rem;
+    width: 800px;
+    
+    /* border: solid 3px red; */
+  }
+  .projectDiv:nth-child(2n) .titleAndParaDiv {
+    left: 7%;
+    top: 1rem;
+    width: 800px;
+    
+    /* border: solid 3px red; */
   }
 }

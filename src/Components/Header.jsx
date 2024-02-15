@@ -1,19 +1,19 @@
 import "./Animations.css"
 import "./Header.css";
 import "./Queries.css";
-
+import { useEffect, useState } from "react";
 
 import linkedInLogoImg from "../Assets/Images/linkedin-100.png"
 import gitHubLogoImg from "../Assets/Images/github-100.png"
 import cvLogoImg from "../Assets/Images/CV-100-edited.png"
-import { useEffect, useState } from "react";
+import sideMenuImg from "../Assets/Images/menuIcon100x100.png"
+
 
 function Header() {
   
   function scrollToHome(e) {
     e.preventDefault();
     window.scrollTo({top: 0, left:0, behavior: "smooth"});
-    console.log("clicked!")
   }
 
   function scrollToAboutReviews(e) {
@@ -56,9 +56,44 @@ function Header() {
       <button className={`ShowScrollButton ${isVisible ? "visible" : ""}`} onClick={scrollToHome}>&uarr;</button>
     );
   }
+
+  // Toggle side menu on mobile / smaller devices - 856px
+  function HandleSideMenu() {
+    const menuIconImg = document.getElementById("menuIconImg");
+    const socialsLinksNav = document.getElementById("socialsLinksNav"); 
+    const pageNavLinksBox = document.getElementById("pageNavLinksBox"); 
+    const header = document.getElementById("header"); 
+
+    if (socialsLinksNav.classList.contains("hide")) {
+      socialsLinksNav.classList.remove("hide");
+      pageNavLinksBox.classList.remove("hide");
+      menuIconImg.classList.add("menuIconIsClicked");
+    } else {
+      socialsLinksNav.classList.add("hide");
+      pageNavLinksBox.classList.add("hide");
+      menuIconImg.classList.remove("menuIconIsClicked");
+    }    
+    // close side menu upon selecting an option
+    header.addEventListener("click", () => {
+      if (!socialsLinksNav.classList.contains("hide")) {
+        socialsLinksNav.classList.add("hide");
+        pageNavLinksBox.classList.add("hide");
+        menuIconImg.classList.remove("menuIconIsClicked");
+      }     
+    })
+    header.addEventListener("mouseleave", () => {
+      if (!socialsLinksNav.classList.contains("hide")) {
+        socialsLinksNav.classList.add("hide");
+        pageNavLinksBox.classList.add("hide");
+        menuIconImg.classList.remove("menuIconIsClicked");
+      }     
+    })
+  }
+
     return (
-        <header className="sectionSpacing">
-            <nav className="socialsLinksNav">
+        <header className="sectionSpacing" id="header">            
+            <img className="menuIconImg" id="menuIconImg" src={sideMenuImg} alt="menu icon" onClick={HandleSideMenu} aria-label="menu button" />            
+            <nav className="socialsLinksNav hide" id="socialsLinksNav">
             <a className="linkedInLogoLink" 
                 href="https://www.linkedin.com/in/maciejmatulewicz/"
                 target="#">
@@ -75,7 +110,7 @@ function Header() {
                   <img className="cvLogoImg socialsLogosImgs" src={cvLogoImg} alt="CV Logo" />
               </a>
             </nav>
-            <nav className="pageNavLinksBox">
+            <nav className="pageNavLinksBox hide" id="pageNavLinksBox">
               <a className="linkAboutReviews" href="#" onClick={scrollToAboutReviews}>About & Reviews</a>
               <a href="#" onClick={scrollToContact}>Contact</a>
               <a href="#" onClick={scrollToServices}>Services</a>

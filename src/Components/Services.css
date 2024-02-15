@@ -13,10 +13,9 @@
   background: linear-gradient(270deg, #1a1a1a, #0a0a0a);
 }
 .servicesContainer {
-  margin-top: 10rem;
-  /* border: solid 1px yellow; */
+  /* margin-top: 10rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
 }
 
 .servicesCards {

@@ -18,9 +18,9 @@
 }
 /* ABOUT & REVIEWS HEADING */
 .h2 {
-  font-size: 3rem;
+  /* font-size: 3rem;
   text-align: center;
-  color: var(--aboutHeaderColor);
+  color: var(--aboutHeaderColor); */
 }
 
 /* REVIEWS HEADING - H3 */
@@ -34,10 +34,10 @@
 }
 
 .personImg {
-  width: 4rem;
+  /* width: 4rem;
   height: 4rem;
   margin-right: 2rem;
-  filter: invert(0.85);
+  filter: invert(0.85); */
 }
 
 .aboutParagraphsDiv {
@@ -47,9 +47,10 @@
   text-align: left;
 }
 .aboutParagraphs {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   color: var(--aboutParagraphsColor);
   margin-top: 2rem;
+  /* border: solid 1px lime; */
 }
 .aboutParagraphs:nth-child(1) {
   margin-top: 5rem;
@@ -74,7 +75,7 @@
 
 /*** CERTIFICATES ***/
 .certificatesContainer {
-  display: grid;
+  /* display: grid;
   justify-content: center;
   align-items: center;
   padding: 5rem auto 5rem auto;
@@ -83,7 +84,7 @@
   grid-template-areas:
     "a a a b b b"
     "c c d d e e"
-    "f f g g h h";
+    "f f g g h h"; */
 }
 /* GRID AND CERT LAYOUT */
 .cert1 {
@@ -128,6 +129,7 @@
   width: 60%;
   text-align: center;
   border: solid 2px #5e5e5e;
+
   /* border: solid 2px #3eaa6b; */
 }
 .certificatesBox:hover {
@@ -143,10 +145,10 @@
   /* filter: contrast(0.8); */
 }
 .certificatesBoxParagraphs {
-  margin: 1rem 0;
+  /* margin: 1rem 0;
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--aboutParagraphsColor);
+  color: var(--aboutParagraphsColor); */
 }
 
 /* evenSpace was simply used as a 'ruler' to calculate positioning */
