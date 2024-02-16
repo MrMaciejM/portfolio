@@ -93,12 +93,12 @@ h2 {
   z-index: 0; */
 }
 .titleAndParaDiv {
-  position: relative;
+  /* position: relative;
   max-width: 50%;
   color: #cacaca;
   padding: 1rem;
   margin-top: -7rem;
-  z-index: 1;
+  z-index: 1; */
   /* border: solid 1px lime;  */
 }
 
@@ -113,10 +113,10 @@ h2 {
   margin-top: 1rem;
 }
 .projectLinksDiv {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   margin-top: 2rem;
-  column-gap: 4rem;
+  column-gap: 4rem; */
 }
 .projectLinksDiv a {
   /* border: solid 2px #3eaa6b; */

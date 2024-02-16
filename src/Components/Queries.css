@@ -193,6 +193,12 @@
     /* border: solid 2px red; */
     width: 80%;
   }
+  .projectLinksDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    column-gap: 4rem;
+  }
   .projectLinksDiv a {
     /* border: solid 2px #3eaa6b; */
     padding: 0.8rem;
@@ -206,6 +212,15 @@
     border-radius: 3px;
     /* margin-right: 50%; */
     z-index: 0;
+  }
+  .titleAndParaDiv {
+    position: relative;
+    max-width: 50%;
+    color: #cacaca;
+    padding: 1rem;
+    margin-top: -7rem;
+    z-index: 1;
+    /* border: solid 1px lime;  */
   }
   /*** SERVICES ***/
   .servicesContainer {
@@ -995,6 +1010,15 @@
 /****500px****/
 /*****************/
 @media only screen and (max-width: 500px) {
+  /* HEADER */
+  .ShowScrollButton {
+    font-size: 1.8rem;
+    height: 40px;
+    width: 40px;
+    left: 46%;
+    top: 89%;
+  }
+  /* HERO/MAIN */
   .profilePicture {
     width: 40%;
     border-radius: 50%;
@@ -1014,10 +1038,11 @@
     margin: -11rem 0 5rem 1rem;
     /* border: solid 2px red; */
   }
+
   /* ABOUT & REVIEWS */
   .aboutParagraphs {
     font-size: 1.1rem;
-    margin-left: -4rem;
+    margin-left: -3.3rem;
   }
   .singleReviewBox {
     width: 150%;
@@ -1042,30 +1067,110 @@
   /* PROJECTS */
   .projectDiv {
     /* border: solid 2px red; */
-    width: 48%;
+    /* border: solid 2px red; */
+    width: 82vw;
+    width: 80%;
+    position: relative;
   }
   .projectImg {
-    width: 250px;
+    width: 300px;
     border-radius: 3px;
     z-index: 0;
   }
+  .projectDiv:nth-child(2n) {
+    /* border: solid 2px lime; */
+    margin-left: 10%;
+  }
+  .projectDiv:nth-child(2n-1) {
+    /* border: solid 2px yellow; */
+    margin-left: 10%;
+    /* width: 350px; */
+  }
   .projectDiv:nth-child(2n) img {
+    /* border: solid 3px lime; */
+    margin-left: 22.8%;
+  }
+  .projectDiv:nth-child(2n-1) img {
     /* border: solid 3px yellow; */
-    margin-left: 22%;
-    
+    margin-left: 1%;
+  }
+  .titleAndParaDiv {
+    max-width: none;
+    width: 80%;
   }
   .projectDiv:nth-child(2n-1) .titleAndParaDiv {
-    left: -5%;
+    left: 0%;
     top: 1rem;
-    width: 800px;
-    
-    /* border: solid 3px red; */
+    /* border: solid 2px lime; */
   }
   .projectDiv:nth-child(2n) .titleAndParaDiv {
-    left: 7%;
+    left: 10.5%;
     top: 1rem;
-    width: 800px;
-    
-    /* border: solid 3px red; */
+    width: 90%;
+    /* border: solid 2px cyan; */
+  }
+  .projectParagraph {
+    font-size: 1rem;
+    /* width: 180%; */
+    /* border: solid 2px yellow; */
+  }
+  .projectLinksDiv {
+    column-gap: 1rem;
+    width: 100%;
+  }
+  .projectLinksDiv a {
+    /* border: solid 2px #3eaa6b; */
+    padding: 0.5rem 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  /* CONTACT */
+  .contactContainer div {
+    width: 50%;
+    margin: 5rem auto 0 auto;
+  }
+}
+/*****************/
+/****430px****/
+/*****************/
+@media only screen and (max-width: 430px) {
+  .ShowScrollButton {
+    font-size: 1.8rem;
+    height: 40px;
+    width: 40px;
+    left: 45%;
+    top: 89%;
+  }
+  /* ABOUT & REVIEWS */
+  .aboutParagraphs {
+    font-size: 1.1rem;
+    margin-left: -2.8rem;
+  }
+  /* PROJECTS */
+  .projectDiv:nth-child(2n) img {
+    /* border: solid 3px lime; */
+    margin-left: 16%;
+  }
+}
+/*****************/
+/****390px****/
+/*****************/
+@media only screen and (max-width: 390px) {
+  .ShowScrollButton {
+    font-size: 1.8rem;
+    height: 40px;
+    width: 40px;
+    left: 45%;
+    top: 89%;
+  }
+  /* ABOUT & REVIEWS */
+  .aboutParagraphs {
+    font-size: 1.1rem;
+    margin-left: -2.2rem;
+  }
+  /* PROJECTS */
+  .projectDiv:nth-child(2n) img {
+    /* border: solid 3px lime; */
+    margin-left: 8%;
   }
 }

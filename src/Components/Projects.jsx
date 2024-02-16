@@ -51,8 +51,8 @@ function Projects() {
         <div className="titleAndParaDiv">
           <style>{backgroundSpiralStyle}</style>        
           <p className="projectTitle">MyPixie</p>
-          <p className="projectParagraph">A social media website with an 'AI/ML-powered pixie' that allows you to make posts, comments, view the latest news from around the world and more. The aim of this project is to develop and push my skills further, with the focus on authentication, hosting/Cloud, back-end technologies, learning basics of ML/AI and implement new databases using PostgreSQL / MongoDB / SQL.</p>
-          <p className="projectParagraph">Tech Stack (TBC) | AI/ML, TypeScript, React, Node, SQL/PostegreSQL. </p>
+          <p className="projectParagraph">A social media website with an 'AI/ML-powered pixie' that allows you to make posts, comments, view the latest news from around the world and more. </p>
+          <p className="projectParagraph">Tech Stack (TBC) | AI/ML, TypeScript, React, Node, SQL/PostegreSQL, Authentication / Google / OAuth.</p>
           <div className="projectLinksDiv">
             {/* <a href="" style={{display: "none"}}>GitHub</a>
             <a href="" style={{display: "none"}}>Live Site</a> */}
