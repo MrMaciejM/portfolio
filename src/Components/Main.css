@@ -4,13 +4,7 @@
   --triangleColor: #555555;
   --spanColorMain: #3eaa6b;
   --verticalLineSeparatorColor: #787878;
-  /* 5ce997 */
-  /* OG green: 5ceb98 */
-  /* 00c2c2 */
-  /* teal: #00c9c9 */
-  /* Old blue: #4777d1 */
 }
-
 /*** FONT COLORS ***/
 .heroBox,
 .shortAboutBox p {
@@ -25,46 +19,24 @@ main {
   margin-bottom: 0rem;
   padding-top: 10rem;
   background: linear-gradient(130deg, #1a1a1a, #0a0a0a);
-  /* border: solid 5px red; */
-}
-
-.heroSectionBox {
-  /* display: flex;
-  position: relative;
-  justify-content: center; */
-}
-.heroBox {
-  /* margin-left: 4rem;
-  margin-top: 6.5rem; */
 }
 .heroBox h1 {
-  /* font-size: 4rem; */
   font-weight: 300;
 }
 /* Web & Software Developer */
 .heroBox p {
-  /* font-size: 1.2rem; */
   margin: 2rem 0;
   margin-left: 4.3rem;
 }
-.profilePicture {
-  /* opacity: 1;
-  width: 30%;
-  border-radius: 50%;
-  margin-left: 3.4rem; */
-}
-
 .verticalLineSeparator {
   background-color: var(--verticalLineSeparatorColor);
   width: 1px;
   border-radius: 16px;
 }
-
 .shortAboutBox {
   position: relative;
   align-self: center;
   letter-spacing: 0.3px;
-  /* border: solid 2px lime; */
 }
 .hexagonGrid {
   position: absolute;
@@ -76,11 +48,7 @@ main {
   overflow: hidden;
 }
 .shortAboutBox p {
-  /* font-size: 1.2rem; */
   margin-top: 1rem;
-}
-.shortAboutBox p:first-of-type {
-  /* margin-top: 11rem; */
 }
 
 span {

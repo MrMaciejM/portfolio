@@ -3,20 +3,16 @@ body {
   scroll-behavior: smooth;
   font-family: "Almarai";
   overflow-x: hidden !important;
-
-  /* background: linear-gradient(150deg, #040404, #181818, #323232); */
-  /* background: linear-gradient(-120%, #181818, #1b141f, #181818); */
-  /* background-color: #101010; */
-  /* background-color: #101010; */
 }
-
+@font-face {
+  font-family: "Almarai";
+  src: url("../src/Assets/Fonts/Almarai/Almarai-Regular.ttf"),
+    url("../src/Assets/Fonts/Almarai/Almarai-Light.ttf");
+}
 .rulerMain {
   height: 13230px;
   width: 3px;
   background: red;
   position: absolute;
-  /* left: 50%; */
   margin: 0 50%;
 }
-
-/* highlight all items */

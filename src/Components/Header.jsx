@@ -111,10 +111,10 @@ function Header() {
               </a>
             </nav>
             <nav className="pageNavLinksBox hide" id="pageNavLinksBox">
-              <a className="linkAboutReviews" href="#" onClick={scrollToAboutReviews}>About & Reviews</a>
-              <a href="#" onClick={scrollToContact}>Contact</a>
-              <a href="#" onClick={scrollToServices}>Services</a>
-              <a id="projectsLink" href="#" onClick={scrollToProjects}>Projects</a>
+              <a className="linkAboutReviews" href="#" onClick={scrollToAboutReviews}alt="Navigate to About & Reviews">About & Reviews</a>
+              <a href="#" onClick={scrollToContact} alt="Navigate to Contact">Contact</a>
+              <a href="#" onClick={scrollToServices} alt="Navigate to Services">Services</a>
+              <a id="projectsLink" href="#" onClick={scrollToProjects} alt="Navigate to Projects">Projects</a>
             </nav>
             <ShowScrollButton />
         </header>

@@ -10,29 +10,7 @@
   --navLinksHover: #d6d6d6;
 }
 
-@font-face {
-  font-family: "Almarai";
-  src: url("../Assets/Fonts/Almarai/Almarai-Regular.ttf"),
-    url("../Assets/Fonts/Almarai/Almarai-Light.ttf");
-}
-header {
-  /* display: flex;
-  position: fixed;
-  justify-content: space-between;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  padding: 0.6rem 5rem;
-  margin-top: 0rem;
-  border-bottom: 1px solid var(--headerBottomBorder);
-  font-family: "Almarai", sans-serif;
-  background-color: var(--headerBackground);
-  z-index: 2;
-  border: solid 2px lime; */
-}
-
 .socialsLinksNav {
-  /* background-color: #979066; */
   border-radius: 30px;
   width: 20%;
   margin-left: -4.2rem;
@@ -51,13 +29,10 @@ header {
   padding: 0.2rem 0.5rem;
   transition: all 0s;
 }
-
 .linkAboutReviews {
-  /* color: red; */
   scroll-behavior: smooth;
   scroll-margin-top: 400px;
 }
-
 .navCard {
   display: flex;
   flex-direction: column;
@@ -66,12 +41,9 @@ header {
   row-gap: 3.5rem;
   height: 400px;
   width: 300px;
-  /* border: solid 3px #049652; */
   border-radius: 7px;
-  /* background-color: #872525; */
   text-align: center;
 }
-
 a {
   font-size: 1rem;
   margin: 0 1rem;
@@ -107,13 +79,11 @@ a:hover {
 }
 #projectsLink:hover {
   transition: all 0.5s;
-  /* border-radius: 11px; */
   box-shadow: 0px 0px 8px 2px var(--projectsLinkBackground);
 }
 img {
   width: 15%;
 }
-
 .gitHubLogoImg,
 .cvLogoImg {
   filter: invert(1);
@@ -121,18 +91,6 @@ img {
 .linkedInLogoImg {
   filter: invert(0);
 }
-/* @keyframes rotation360 {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.spinAnimation {
-  animation: rotation360 1.2s linear 1;
-} */
 
 .ShowScrollButton {
   font-size: 2.4rem;
