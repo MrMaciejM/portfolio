@@ -106,7 +106,7 @@ function Header() {
               </a>              
             <a className="cvLogoLink"
                 href={"MaciejMatulewiczCV.pdf"}
-                target="_blank">
+                target="_self">
                   <img className="cvLogoImg socialsLogosImgs" src={cvLogoImg} alt="CV Logo" />
               </a>
             </nav>
