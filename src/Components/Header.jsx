@@ -105,7 +105,7 @@ function Header() {
                   <img className="gitHubLogoImg socialsLogosImgs" src={gitHubLogoImg} alt="GitHub Logo" />
               </a>              
             <a className="cvLogoLink"
-                href={process.env.PUBLIC_URL + "MaciejMatulewiczCV.pdf"}
+                href={process.env.PUBLIC_URL + "/MaciejMatulewiczCV.pdf"}
                 target="_blank" rel="noopener noreferrer" >
                   <img className="cvLogoImg socialsLogosImgs" src={cvLogoImg} alt="CV Logo" />
               </a>
