@@ -106,7 +106,7 @@ function Header() {
               </a>              
             <a className="cvLogoLink"
                 href={process.env.PUBLIC_URL + "/MaciejMatulewiczCV.pdf"}
-                target="_blank" rel="noreferrer" >
+                target="_blank">
                   <img className="cvLogoImg socialsLogosImgs" src={cvLogoImg} alt="CV Logo" />
               </a>
             </nav>
