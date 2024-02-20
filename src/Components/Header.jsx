@@ -105,7 +105,7 @@ function Header() {
                   <img className="gitHubLogoImg socialsLogosImgs" src={gitHubLogoImg} alt="GitHub Logo" />
               </a>              
             <a className="cvLogoLink"
-                href={"https://main.d1tc3rau7qbj2.amplifyapp.com/MaciejMatulewiczCV.pdf"}
+                href={"MaciejMatulewiczCV.pdf"}
                 target="_blank" rel="noopener noreferrer" >
                   <img className="cvLogoImg socialsLogosImgs" src={cvLogoImg} alt="CV Logo" />
               </a>
