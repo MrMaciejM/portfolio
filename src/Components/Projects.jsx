@@ -4,6 +4,7 @@ import "./Header.css"
 import "./Queries.css";
 
 import myPixieImg from "../Assets/Images/myPixie-800x600-inDev.png"
+import weatherToSms from "../Assets/Images/weather-to-sms-800x600.png"
 import cardChampionsImg from "../Assets/Images/cardChampions800x600.png"
 import globeTrotterImg from "../Assets/Images/globeTrotter800x600.png"
 import weatherDashboardImg from "../Assets/Images/weatherApp-800x600.png"
@@ -56,6 +57,20 @@ function Projects() {
           <div className="projectLinksDiv">
             {/* <a href="" style={{display: "none"}}>GitHub</a>
             <a href="" style={{display: "none"}}>Live Site</a> */}
+          </div>
+        </div>
+      </div>
+      {/* Project */}
+      <div className="projectDiv">
+        <img className="projectImg" src={weatherToSms} alt="Weather to SMS app in Python" />
+        <div className="titleAndParaDiv">
+          <style>{backgroundSpiralStyle}</style>        
+          <p className="projectTitle">Weather To SMS</p>
+          <p className="projectParagraph">A Python built app that utilises Twilio and OpenWeather APIs to send SMS to yur phone with the current weather data.</p>
+          <p className="projectParagraph">Tech Stack | Python, OpenWeather API, Twilio API.</p>
+          <div className="projectLinksDiv">
+            <a href="https://github.com/MrMaciejM/weather-to-sms-app" target="#blank">GitHub</a>
+            {/* <a href="#"  >Live Site</a> */}
           </div>
         </div>
       </div>
