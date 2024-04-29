@@ -66,7 +66,7 @@ function Projects() {
         <div className="titleAndParaDiv">
           <style>{backgroundSpiralStyle}</style>        
           <p className="projectTitle">Weather To SMS</p>
-          <p className="projectParagraph">A Python built app that utilises Twilio and OpenWeather APIs to send SMS to yur phone with the current weather data.</p>
+          <p className="projectParagraph">A Python built app that utilises Twilio and OpenWeather APIs to send SMS to your phone with the current weather data.</p>
           <p className="projectParagraph">Tech Stack | Python, OpenWeather API, Twilio API.</p>
           <div className="projectLinksDiv">
             <a href="https://github.com/MrMaciejM/weather-to-sms-app" target="#blank">GitHub</a>
