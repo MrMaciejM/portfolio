@@ -10,7 +10,7 @@ function Footer() {
 
     return(
         <footer>
-            <p>© {currentYear} - Maciej Matulewicz</p>
+            <p>© 2023 - {currentYear} - Maciej Matulewicz</p>
         </footer>
     )
 }

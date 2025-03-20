@@ -120,6 +120,12 @@ function About() {
               "Maciej is always willing to learn, is confident in his work and completes the tasks. He is easy to work with, be it in a team or doing individual tasks" - Hadiqa, Senior Technical Associate.
               </p>
             </div>  
+            <div className="singleReviewBox">
+              <img className="personImg" src={personIconImg} alt="person icon" />
+              <p className="aboutReviewsParagraphs">
+              "The communication has been as good as it gets and I always felt you listened to my ideas and really worked to try and realize them. The end result is very good. You managed to achieve exactly what I asked and hoped for. I have gone through the code and it is very well structured and easy to follow." - Rasmus.
+              </p>
+            </div>  
           </div>
           {/* CERTIFICATES */}
           {/* TO IMPLEMENT: 

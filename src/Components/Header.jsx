@@ -104,11 +104,11 @@ function Header() {
                 target="#" >
                   <img className="gitHubLogoImg socialsLogosImgs" src={gitHubLogoImg} alt="GitHub Logo" />
               </a>              
-            <a className="cvLogoLink"
+            {/* <a className="cvLogoLink"
                 href={process.env.PUBLIC_URL + "/MaciejMatulewiczCV.pdf"}
                 target="_blank" rel="noreferrer noopener">
                   <img className="cvLogoImg socialsLogosImgs" src={cvLogoImg} alt="CV Logo" />
-              </a>
+              </a> */}
             </nav>
             <nav className="pageNavLinksBox hide" id="pageNavLinksBox">
               <a className="linkAboutReviews" href="#" onClick={scrollToAboutReviews}alt="Navigate to About & Reviews">About & Reviews</a>
